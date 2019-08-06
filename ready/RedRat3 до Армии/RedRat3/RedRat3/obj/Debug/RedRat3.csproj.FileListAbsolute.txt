@@ -1,0 +1,53 @@
+D:\Projects\RedRat3-II\RedRat3\RedRat3\bin\Debug\RedRat3.exe.config
+D:\Projects\RedRat3-II\RedRat3\RedRat3\bin\Debug\RedRat3.exe
+D:\Projects\RedRat3-II\RedRat3\RedRat3\bin\Debug\RedRat3.pdb
+D:\Projects\RedRat3-II\RedRat3\RedRat3\bin\Debug\RedRat.dll
+D:\Projects\RedRat3-II\RedRat3\RedRat3\obj\Debug\RedRat3.Properties.Resources.resources
+D:\Projects\RedRat3-II\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.GenerateResource.Cache
+D:\Projects\RedRat3-II\RedRat3\RedRat3\obj\Debug\RedRat3.exe
+D:\Projects\RedRat3-II\RedRat3\RedRat3\obj\Debug\RedRat3.pdb
+D:\Projects\RedRat3-II\RedRat3\RedRat3\obj\Debug\RedRat3.Form1.resources
+D:\Projects\RedRat3-II\RedRat3\RedRat3\obj\Debug\RedRat3.Form2.resources
+D:\Projects\RedRat3-II\RedRat3\RedRat3\obj\Debug\RedRat3.Form3.resources
+D:\RedRat3\RedRat3\bin\Debug\RedRat3.exe.config
+D:\RedRat3\RedRat3\bin\Debug\RedRat3.exe
+D:\RedRat3\RedRat3\bin\Debug\RedRat3.pdb
+D:\RedRat3\RedRat3\bin\Debug\RedRat.dll
+D:\RedRat3\RedRat3\obj\Debug\RedRat3.csprojResolveAssemblyReference.cache
+D:\RedRat3\RedRat3\obj\Debug\RedRat3.Form1.resources
+D:\RedRat3\RedRat3\obj\Debug\RedRat3.Form2.resources
+D:\RedRat3\RedRat3\obj\Debug\RedRat3.Form3.resources
+D:\RedRat3\RedRat3\obj\Debug\RedRat3.Properties.Resources.resources
+D:\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.GenerateResource.Cache
+D:\RedRat3\RedRat3\obj\Debug\RedRat3.exe
+D:\RedRat3\RedRat3\obj\Debug\RedRat3.pdb
+D:\Projects\RedRat3-II\RedRat3\RedRat3\obj\Debug\RedRat3.Form4.resources
+C:\iTemka\Work\RedRat3\RedRat3\bin\Debug\RedRat3.exe.config
+C:\iTemka\Work\RedRat3\RedRat3\bin\Debug\RedRat3.exe
+C:\iTemka\Work\RedRat3\RedRat3\bin\Debug\RedRat3.pdb
+C:\iTemka\Work\RedRat3\RedRat3\bin\Debug\RedRat.dll
+C:\iTemka\Work\RedRat3\RedRat3\obj\Debug\RedRat3.csprojResolveAssemblyReference.cache
+C:\iTemka\Work\RedRat3\RedRat3\obj\Debug\RedRat3.Form1.resources
+C:\iTemka\Work\RedRat3\RedRat3\obj\Debug\RedRat3.Form2.resources
+C:\iTemka\Work\RedRat3\RedRat3\obj\Debug\RedRat3.Form3.resources
+C:\iTemka\Work\RedRat3\RedRat3\obj\Debug\RedRat3.Form4.resources
+C:\iTemka\Work\RedRat3\RedRat3\obj\Debug\RedRat3.Properties.Resources.resources
+C:\iTemka\Work\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.GenerateResource.Cache
+C:\iTemka\Work\RedRat3\RedRat3\obj\Debug\RedRat3.exe
+C:\iTemka\Work\RedRat3\RedRat3\obj\Debug\RedRat3.pdb
+D:\Projects\RedRat3-II\RedRat3\RedRat3\obj\Debug\RedRat3.csprojResolveAssemblyReference.cache
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\bin\Debug\RedRat3.exe.config
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\bin\Debug\RedRat3.exe
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\bin\Debug\RedRat3.pdb
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\bin\Debug\RedRat.dll
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.csprojAssemblyReference.cache
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.Form1.resources
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.Form2.resources
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.Form3.resources
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.Form4.resources
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.Properties.Resources.resources
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.GenerateResource.cache
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.CoreCompileInputs.cache
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.CopyComplete
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.exe
+E:\C#\Делал проект RedRat3 до армии\RedRat3\RedRat3\obj\Debug\RedRat3.pdb

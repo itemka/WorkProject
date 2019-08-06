@@ -1,0 +1,9 @@
+[atv panasonic]
+code = ee05f06000a1
+form
+
+display = atv panasonic
+msg = Изображение и звук ATV соответствуют?
+image = toshiba/autoshow.jpg
+label = форма1
+

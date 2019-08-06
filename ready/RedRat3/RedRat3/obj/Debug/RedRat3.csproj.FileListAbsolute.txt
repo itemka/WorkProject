@@ -1,0 +1,31 @@
+E:\C#\RedRat3\RedRat3\bin\Debug\RedRat3.exe.config
+E:\C#\RedRat3\RedRat3\bin\Debug\RedRat3.exe
+E:\C#\RedRat3\RedRat3\bin\Debug\RedRat3.pdb
+E:\C#\RedRat3\RedRat3\bin\Debug\RedRat.dll
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.csprojAssemblyReference.cache
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.Form1.resources
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.Properties.Resources.resources
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.GenerateResource.cache
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.CoreCompileInputs.cache
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.CopyComplete
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.exe
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.pdb
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.FormTimerCapture.resources
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.FormSetting.resources
+E:\C#\RedRat3\RedRat3\obj\Debug\RedRat3.FormTimerOutputIRsignal.resources
+E:\Project C#\RedRat3\RedRat3\bin\Debug\RedRat3.exe.config
+E:\Project C#\RedRat3\RedRat3\bin\Debug\RedRat3.exe
+E:\Project C#\RedRat3\RedRat3\bin\Debug\RedRat3.pdb
+E:\Project C#\RedRat3\RedRat3\bin\Debug\RedRat.dll
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.csprojAssemblyReference.cache
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.Form1.resources
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.FormSetting.resources
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.FormTimerCapture.resources
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.FormTimerOutputIRsignal.resources
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.Properties.Resources.resources
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.GenerateResource.cache
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.CoreCompileInputs.cache
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.CopyComplete
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.exe
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.pdb
+E:\Project C#\RedRat3\RedRat3\obj\Debug\RedRat3.inputName.resources

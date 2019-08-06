@@ -1,0 +1,7 @@
+[wbreset]
+code = AB 07 0C 80 80 80 C1
+stop = 500
+code = AB 07 01 01 00 00 4B
+stop = 1000
+code = AB 07 0C 80 80 80 C1
+display = WB Reset

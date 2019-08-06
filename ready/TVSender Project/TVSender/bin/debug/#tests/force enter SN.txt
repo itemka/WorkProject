@@ -1,0 +1,14 @@
+[ktc.entersn]
+code = ee05e20100cc
+InputText = [checks]
+readfind = >Write TV
+stop = 1000
+code = ee05e20101cc
+readafter = 545620532F4E3A, 14
+regex = [0-9]{6}[A-z]{1}[0-9]{7}
+display = ¬вод серийного
+msg = ¬ведите серийный номер.
+
+
+[checks]
+regex = [0-9]{6}[A-z]{1}[0-9]{7}

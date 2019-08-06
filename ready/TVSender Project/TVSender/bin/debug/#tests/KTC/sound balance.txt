@@ -1,0 +1,11 @@
+[sound.left]
+code = ee05f03100c1
+display = sound.left
+
+[sound.right]
+code = ee05f03100c3
+display = sound.right
+
+[sound.balance]
+code = ee05f03100c2
+display = sound.balance

@@ -1,0 +1,9 @@
+[hdmi3 Horizont]
+code = ee05f06100a6
+form
+
+display = hdmi3 Horizont
+msg = Изображение и звук hdmi3  соответствуют?
+image = toshiba/autoshow.jpg
+label = форма1
+

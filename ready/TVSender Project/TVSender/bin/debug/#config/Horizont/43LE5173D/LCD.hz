@@ -1,0 +1,19 @@
+[kts]
+table dvb
+//aging.off
+genr.hdmi
+hdmi2 Horizont
+//ch table2
+grey
+black
+white
+//blue
+green
+red
+color.off
+//atv horizont
+dvbt
+//table dvb
+dvbt Horizont
+//dvbc
+hdmi1

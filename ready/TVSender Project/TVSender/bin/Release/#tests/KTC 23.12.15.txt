@@ -1,0 +1,124 @@
+[sw]
+code = ee05f070009b
+display = sw not full
+
+[keyson]
+code = ee05fd0200fa
+display = keys on
+
+[keysoff]
+display = keys off
+code = ee05fd0200fb
+
+[CI]
+code = ee05f04200c1
+display = CI not full
+
+[atv]
+code = ee05f06000a1
+display = atv
+
+[dtv]
+code = ee05f06000a2
+display = dtv
+
+[dvbc]
+code = ee05f06000a3
+display = dvbc
+
+[dvbt]
+code = ee05f06000b3
+display = dvbt
+
+[table1]
+code = ee05e2010018
+display = ch table1
+
+[table2]
+code = ee05e20100cc
+display = ch table2
+
+[table dvb]
+code = ee05e20100ce
+display = ch table dvb
+
+[hdmi1]
+code = ee05f06000a4
+display = hdmi1
+
+[hdmi2]
+code = ee05f06100a5
+display = hdmi2
+
+[hdmi3]
+code = ee05f06100a6
+display = hdmi3
+
+[vga]
+code = ee05f06100a7
+display = vga
+
+[av]
+code = ee05f06100a8
+display = av
+
+[reset]
+code = ee051f0000dc
+display = reset
+
+[aging.on]
+code = ee05f04200c2
+display = aging mode on
+
+[aging.off]
+code = ee05f04200c3
+display = aging mode off
+
+[grey]
+code = ee05f0cc00c7
+display = grey192
+
+[white]
+code = ee05f0cc00c2
+display = white
+
+[black]
+code = ee05f0cc00c6
+display = black
+
+[red]
+code = ee05f0cc00c3
+display = red
+
+[green]
+code = ee05f0cc00c4
+display = green
+
+[blue]
+code = ee05f0cc00c5
+display = blue
+
+[color.off]
+code = ee05f0cc00c1
+display = Color off
+
+[ledon]
+code = ee05f04200c4
+display = LED on
+
+[ledoff]
+display = LED off
+code = ee05f04200c5
+
+
+[sound.left]
+code = ee05f03100c1
+display = sound.left
+
+[sound.right]
+code = ee05f03100c3
+display = sound.right
+
+[sound.balance]
+code = ee05f03100c2
+display = sound.balance

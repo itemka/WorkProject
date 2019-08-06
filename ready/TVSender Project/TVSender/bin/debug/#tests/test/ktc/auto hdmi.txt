@@ -1,0 +1,4 @@
+[test.hdmi1.auto]
+code = ee05f06000a4
+stop=1000
+display = auto hdmi1

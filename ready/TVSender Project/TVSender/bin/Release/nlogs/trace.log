@@ -1,0 +1,9 @@
+15:59:39:172 |Trace| thread 1| TVSender.Code.OpenRestart |164  Успешно открыт COM6
+15:59:39:172 |Debug| thread 1| TVSender.Form1.Form1_Shown |1289  isAutoStart = False
+15:59:40:205 |Info| thread 1| LogUser.In |82  Пользователь до подмены учетной записи: HORIZONT\Pavlenko
+15:59:40:205 |Info| thread 1| LogUser.In |87  После подмены учетной записи: HORIZONT\savchuk
+15:59:40:205 |Debug| thread 1| LogUser.Out |96  Перед отменой учетной записи: HORIZONT\savchuk
+15:59:40:205 |Debug| thread 1| LogUser.Out |104  После отмены подмены учетной записи: HORIZONT\Pavlenko
+15:59:54:256 |Trace| thread 1| TVSender.Ex.Try |65  Значение не может быть неопределенным.
+Имя параметра: path
+15:59:54:256 |Trace| thread 1| TVSender.Code.ClosePorts |96  ClosePorts()

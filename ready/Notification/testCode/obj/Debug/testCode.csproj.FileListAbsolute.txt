@@ -1,0 +1,9 @@
+E:\Project C#\testCode\testCode\bin\Debug\testCode.exe
+E:\Project C#\testCode\testCode\bin\Debug\testCode.pdb
+E:\Project C#\testCode\testCode\obj\Debug\testCode.csprojAssemblyReference.cache
+E:\Project C#\testCode\testCode\obj\Debug\testCode.Form1.resources
+E:\Project C#\testCode\testCode\obj\Debug\testCode.Properties.Resources.resources
+E:\Project C#\testCode\testCode\obj\Debug\testCode.csproj.GenerateResource.cache
+E:\Project C#\testCode\testCode\obj\Debug\testCode.csproj.CoreCompileInputs.cache
+E:\Project C#\testCode\testCode\obj\Debug\testCode.exe
+E:\Project C#\testCode\testCode\obj\Debug\testCode.pdb

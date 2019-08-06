@@ -1,0 +1,9 @@
+[vga panasonic]
+code = ee05f06100a7
+form
+
+display = vga panasonic
+msg = Изображение vga  соответствуют?
+image = toshiba/autoshow.jpg
+label = форма1
+

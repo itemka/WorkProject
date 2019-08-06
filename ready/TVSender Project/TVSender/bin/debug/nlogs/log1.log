@@ -1,0 +1,66 @@
+2017.12.28; 12:54:04; 438 | Debug | TVSender.Form1.AddCreatedOperation -> key = checks
+2017.12.28; 12:54:04; 918 | Debug | TVSender.Form1.AddCreatedOperation -> key = CI
+2017.12.28; 12:54:04; 999 | Debug | TVSender.Form1.AddCreatedOperation -> key = keyson
+2017.12.28; 12:54:05; 095 | Debug | TVSender.Form1.AddCreatedOperation -> key = keysoff
+2017.12.28; 12:54:05; 221 | Debug | TVSender.Form1.AddCreatedOperation -> key = ledon
+2017.12.28; 12:54:05; 335 | Debug | TVSender.Form1.AddCreatedOperation -> key = ledoff
+2017.12.28; 12:54:05; 383 | Debug | TVSender.Form1.AddCreatedOperation -> key = sw
+2017.12.28; 12:54:05; 527 | Debug | TVSender.Form1.AddCreatedOperation -> key = checks
+2017.12.28; 12:54:05; 597 | Debug | TVSender.Form1.AddCreatedOperation -> key = atv
+2017.12.28; 12:54:05; 650 | Debug | TVSender.Form1.AddCreatedOperation -> key = dtv
+2017.12.28; 12:54:05; 706 | Debug | TVSender.Form1.AddCreatedOperation -> key = dvbc
+2017.12.28; 12:54:05; 820 | Debug | TVSender.Form1.AddCreatedOperation -> key = dvbt
+2017.12.28; 12:54:06; 053 | Debug | TVSender.Form1.AddCreatedOperation -> key = checks
+2017.12.28; 12:54:09; 830 | Info | TVSender.Form1.OpenPorts -> ѕорт COM7 не подключен.
+ѕорт 'COM7' не существует.
+
+System.IO.IOException:
+Х в TVSender.Form1.OpenPorts() в D:\Projects\TVSender Project\TVSender\Form1.cs:строка 574
+Х в System.IO.Ports.SerialPort.Open()
+
+2017.12.28; 12:54:09; 856 | Warn | TVSender.Form1.OpenPorts -> System.IO.IOException: ѕорт 'COM7' не существует.
+   в System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   в System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   в System.IO.Ports.SerialPort.Open()
+   в TVSender.Form1.OpenPorts() в D:\Projects\TVSender Project\TVSender\Form1.cs:строка 574
+2017.12.28; 12:54:12; 092 | Debug | TVSender.Form1.Form1_Shown -> autostart = True
+2017.12.28; 12:55:24; 560 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 12:55:50; 473 | Info | TVSender.Form1.OpenPorts -> ѕорт COM3 не подключен.
+”казанный порт не существует.
+
+System.IO.IOException:
+Х в TVSender.Form1.OpenPorts() в D:\Projects\TVSender Project\TVSender\Form1.cs:строка 574
+Х в System.IO.Ports.SerialPort.Open()
+
+2017.12.28; 12:55:50; 481 | Warn | TVSender.Form1.OpenPorts -> System.IO.IOException: ”казанный порт не существует.
+   в System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   в System.IO.Ports.InternalResources.WinIOError()
+   в System.IO.Ports.SerialStream.InitializeDCB(Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Boolean discardNull)
+   в System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   в System.IO.Ports.SerialPort.Open()
+   в TVSender.Form1.OpenPorts() в D:\Projects\TVSender Project\TVSender\Form1.cs:строка 574
+2017.12.28; 12:57:09; 688 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 12:57:20; 172 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 12:57:44; 212 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 12:59:11; 420 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 13:00:41; 561 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 13:00:55; 149 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 13:01:18; 612 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 13:03:38; 768 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 13:04:35; 390 | Info | TVSender.Form1.OpenPorts -> ѕорт COM3 не подключен.
+”казанный порт не существует.
+
+System.IO.IOException:
+Х в TVSender.Form1.OpenPorts() в D:\Projects\TVSender Project\TVSender\Form1.cs:строка 574
+Х в System.IO.Ports.SerialPort.Open()
+
+2017.12.28; 13:04:35; 399 | Warn | TVSender.Form1.OpenPorts -> System.IO.IOException: ”казанный порт не существует.
+   в System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   в System.IO.Ports.InternalResources.WinIOError()
+   в System.IO.Ports.SerialStream.InitializeDCB(Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Boolean discardNull)
+   в System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   в System.IO.Ports.SerialPort.Open()
+   в TVSender.Form1.OpenPorts() в D:\Projects\TVSender Project\TVSender\Form1.cs:строка 574
+2017.12.28; 13:04:37; 408 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 13:04:44; 047 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False
+2017.12.28; 13:05:11; 959 | Debug | TVSender.OptionsForm1.CloseAndSave -> autostart = False

@@ -1,0 +1,14 @@
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\bin\Debug\xyControlSample.exe.config
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\bin\Debug\xyControlSample.exe
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\bin\Debug\xyControlSample.pdb
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\bin\Debug\MinoltaColorSpaceControl.dll
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\obj\Debug\xyControlSample.csprojAssemblyReference.cache
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\obj\Debug\Interop.CA200SRVRLib.dll
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\obj\Debug\xyControlSample.csproj.ResolveComReference.cache
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\obj\Debug\xyControlSample.Form1.resources
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\obj\Debug\xyControlSample.Properties.Resources.resources
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\obj\Debug\xyControlSample.csproj.GenerateResource.cache
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\obj\Debug\xyControlSample.csproj.CoreCompileInputs.cache
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\obj\Debug\xyControlSample.csproj.CopyComplete
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\obj\Debug\xyControlSample.exe
+e:\Project C#\ca-210\xyControlSample-C#\xyControlSample-C#\xyControlSample\obj\Debug\xyControlSample.pdb

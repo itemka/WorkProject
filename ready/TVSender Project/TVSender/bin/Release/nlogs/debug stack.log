@@ -1,0 +1,5 @@
+15:59:39:172 |Debug| isAutoStart = False   |thread 1| Control.InvokeMarshaledCallbackHelper => Form.OnShown => Form1.Form1_Shown 1289
+15:59:40:205 |Info| Пользователь до подмены учетной записи: HORIZONT\Pavlenko   |thread 1| OptionsForm1.Reload => PublicData.GetCheckFirstKeyFromSection => LogUser.In 82
+15:59:40:205 |Info| После подмены учетной записи: HORIZONT\savchuk   |thread 1| OptionsForm1.Reload => PublicData.GetCheckFirstKeyFromSection => LogUser.In 87
+15:59:40:205 |Debug| Перед отменой учетной записи: HORIZONT\savchuk   |thread 1| OptionsForm1.Reload => PublicData.GetCheckFirstKeyFromSection => LogUser.Out 96
+15:59:40:205 |Debug| После отмены подмены учетной записи: HORIZONT\Pavlenko   |thread 1| OptionsForm1.Reload => PublicData.GetCheckFirstKeyFromSection => LogUser.Out 104

@@ -1,0 +1,15 @@
+[if]
+form
+form
+{
+	form
+	form
+}
+form
+form
+{
+	form
+	form
+}
+Display = IF
+msg = aga

@@ -1,0 +1,4 @@
+[sw panasonic TX-32DR300ZZ]
+code = ee05f070009b
+read = Oct 10 2017, 09:40:02
+display = sw panasonic TX-32DR300ZZ

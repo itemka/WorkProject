@@ -1,0 +1,4 @@
+
+[redrat.prestigsmart.down]
+redrat=007f1ee1
+stop=100

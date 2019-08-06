@@ -1,0 +1,254 @@
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\bin\Release\TVSender.exe.config
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.csprojResolveAssemblyReference.cache
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.AskForm.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.ColorBoard.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.Form1.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.FormAboutDialog.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\SoundCatcher.FormConsole.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.FormNewChoice.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.FormScaner.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.KeyForm.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.OptionForm.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.PortTestForm.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.Properties.Resources.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.OldNotUsingSelectForm.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.Pretest.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.AskSoundForm.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.OptionsSelectForm.resources
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.csproj.GenerateResource.Cache
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\bin\Release\TVSender.exe
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\bin\Release\TVSender.pdb
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.exe
+C:\Users\ogurchenkov\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\bin\Release\TVSender.exe.config
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.exe
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\bin\Release\TVSender.exe
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\bin\Release\TVSender.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.AskForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.ColorBoard.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.FormAboutDialog.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\SoundCatcher.FormConsole.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.FormNewChoice.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.FormScaner.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.KeyForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.PortTestForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.Pretest.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.AskSoundForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.OptionsSelectForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.csproj.GenerateResource.Cache
+I:\TVsender Project\TVSender\bin\Release\TVSender.exe.config
+I:\TVsender Project\TVSender\bin\Release\TVSender.exe
+I:\TVsender Project\TVSender\bin\Release\TVSender.pdb
+I:\TVsender Project\TVSender\bin\Release\Interop.CA200SRVRLib.dll
+I:\TVsender Project\TVSender\obj\Release\TVSender.csprojResolveAssemblyReference.cache
+I:\TVsender Project\TVSender\obj\Release\TVSender.AskForm.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.ColorBoard.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.ColorSystemTools.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.EnterForm.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.Form1.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.FormAboutDialog.resources
+I:\TVsender Project\TVSender\obj\Release\SoundCatcher.FormConsole.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.FormNewChoice.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.FormScaner.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.KeyForm.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.OptionsForm1.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.Properties.Resources.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.Pretest.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.AskSoundForm.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.OptionsSelectForm.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.csproj.GenerateResource.Cache
+I:\TVsender Project\TVSender\obj\Release\TVSender.exe
+I:\TVsender Project\TVSender\obj\Release\TVSender.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\bin\Release\Interop.CA200SRVRLib.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.ColorSystemTools.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.EnterForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project\TVSender\obj\Release\TVSender.OptionsForm1.resources
+I:\TVsender Project\TVSender\obj\Release\TVSender.ChromaWhiteBalance.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\bin\Release\TVSender.exe.config
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\bin\Release\TVSender.exe
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\bin\Release\TVSender.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\bin\Release\Interop.CA200SRVRLib.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.AskForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.ColorBoard.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.ChromaWhiteBalance.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.ColorSystemTools.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.EnterForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.FormAboutDialog.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\SoundCatcher.FormConsole.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.FormNewChoice.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.FormScaner.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.KeyForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.OptionsForm1.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.Pretest.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.AskSoundForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.OptionsSelectForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.exe
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\obj\Release\TVSender.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\bin\Release\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\bin\Release\Microsoft.VisualStudio.DebuggerVisualizers.xml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVsender Project 16.10.22\TVsender Project\TVSender\bin\Release\ru\Microsoft.VisualStudio.DebuggerVisualizers.resources.dll
+I:\TVsender Project 27.10.2016\TVSender\bin\Release\TVSender.exe.config
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.exe
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.pdb
+I:\TVsender Project 27.10.2016\TVSender\bin\Release\TVSender.exe
+I:\TVsender Project 27.10.2016\TVSender\bin\Release\TVSender.pdb
+I:\TVsender Project 27.10.2016\TVSender\bin\Release\Interop.CA200SRVRLib.dll
+I:\TVsender Project 27.10.2016\TVSender\bin\Release\Microsoft.VisualStudio.DebuggerVisualizers.dll
+I:\TVsender Project 27.10.2016\TVSender\bin\Release\Microsoft.VisualStudio.DebuggerVisualizers.xml
+I:\TVsender Project 27.10.2016\TVSender\bin\Release\ru\Microsoft.VisualStudio.DebuggerVisualizers.resources.dll
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.csprojResolveAssemblyReference.cache
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.AskForm.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.ColorBoard.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.EnterForm.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.Form1.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.FormAboutDialog.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\SoundCatcher.FormConsole.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.FormNewChoice.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.FormScaner.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.KeyForm.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.OptionsForm1.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.Properties.Resources.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.Pretest.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.AskSoundForm.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.OptionsSelectForm.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.csproj.GenerateResource.Cache
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.WhiteBalanceChroma.resources
+I:\TVsender Project 27.10.2016\TVSender\obj\Release\TVSender.WhiteBalanceMinolta.resources
+I:\TVsender Project 06.11.2016\TVSender\bin\Release\TVSender.exe.config
+I:\TVsender Project 06.11.2016\TVSender\bin\Release\TVSender.exe
+I:\TVsender Project 06.11.2016\TVSender\bin\Release\TVSender.pdb
+I:\TVsender Project 06.11.2016\TVSender\bin\Release\Interop.CA200SRVRLib.dll
+I:\TVsender Project 06.11.2016\TVSender\bin\Release\Microsoft.VisualStudio.DebuggerVisualizers.dll
+I:\TVsender Project 06.11.2016\TVSender\bin\Release\Microsoft.VisualStudio.DebuggerVisualizers.xml
+I:\TVsender Project 06.11.2016\TVSender\bin\Release\ru\Microsoft.VisualStudio.DebuggerVisualizers.resources.dll
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.csprojResolveAssemblyReference.cache
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.AskForm.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.ColorBoard.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.WhiteBalanceChroma.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.WhiteBalanceMinolta.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.EnterForm.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.Form1.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.FormAboutDialog.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\SoundCatcher.FormConsole.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.FormNewChoice.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.FormScaner.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.KeyForm.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.OptionsForm1.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.Properties.Resources.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.Pretest.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.AskSoundForm.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.OptionsSelectForm.resources
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.csproj.GenerateResource.Cache
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.exe
+I:\TVsender Project 06.11.2016\TVSender\obj\Release\TVSender.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\bin\Release\TVSender.exe.config
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\bin\Release\TVSender.exe
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\bin\Release\TVSender.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\bin\Release\Interop.CA200SRVRLib.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\bin\Release\Microsoft.VisualStudio.DebuggerVisualizers.xml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\bin\Release\ru\Microsoft.VisualStudio.DebuggerVisualizers.resources.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.AskForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.ColorBoard.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.WhiteBalanceChroma.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.WhiteBalanceMinolta.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.EnterForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.FormAboutDialog.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\SoundCatcher.FormConsole.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.FormNewChoice.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.FormScaner.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.KeyForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.OptionsForm1.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.Pretest.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.AskSoundForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.OptionsSelectForm.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.exe
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\TVSender Project\TVsender Project\TVSender\obj\Release\TVSender.pdb
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.csprojResolveAssemblyReference.cache
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.AskForm.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.ColorBoard.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.WhiteBalanceChroma.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.WhiteBalanceMinolta.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.EnterForm.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.Form1.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.FormAboutDialog.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\SoundCatcher.FormConsole.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.FormNewChoice.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.FormScaner.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.KeyForm.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.OptionsForm1.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.Properties.Resources.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.AskSoundForm.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.OptionsSelectForm.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.csproj.GenerateResource.Cache
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.exe
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.pdb
+D:\Projects\TVSender Project\TVSender\bin\Release\TVSender.exe.config
+D:\Projects\TVSender Project\TVSender\bin\Release\TVSender.exe
+D:\Projects\TVSender Project\TVSender\bin\Release\TVSender.pdb
+D:\Projects\TVSender Project\TVSender\bin\Release\NLog.config
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.FormsSmall.FormTextLine.resources
+D:\Projects\TVSender Project\TVSender\obj\Release\TVSender.FormTimer.resources
+C:\Projects\TVSender Project\TVSender\bin\Release\NLog.config
+C:\Projects\TVSender Project\TVSender\bin\Release\TVSender.exe.config
+C:\Projects\TVSender Project\TVSender\bin\Release\TVSender.exe
+C:\Projects\TVSender Project\TVSender\bin\Release\TVSender.pdb
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.csprojResolveAssemblyReference.cache
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.FormsSmall.FormTextLine.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.FormTimer.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.AskForm.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.ColorBoard.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.WhiteBalanceChroma.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.WhiteBalanceMinolta.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.EnterForm.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.Form1.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.FormAboutDialog.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\SoundCatcher.FormConsole.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.FormNewChoice.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.FormScaner.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.KeyForm.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.OptionsForm1.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.Properties.Resources.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.AskSoundForm.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.OptionsSelectForm.resources
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.csproj.GenerateResource.Cache
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.exe
+C:\Projects\TVSender Project\TVSender\obj\Release\TVSender.pdb
+D:\work\TVSender Project\TVSender\bin\Release\Resources\COM_Registration_Tool.exe
+D:\work\TVSender Project\TVSender\bin\Release\NLog.config
+D:\work\TVSender Project\TVSender\bin\Release\TVSender.exe.config
+D:\work\TVSender Project\TVSender\bin\Release\TVSender.exe
+D:\work\TVSender Project\TVSender\bin\Release\TVSender.pdb
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.csprojAssemblyReference.cache
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.FormsSmall.FormTextLine.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.FormTimer.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.AskForm.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.ColorBoard.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.WhiteBalanceChroma.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.WhiteBalanceMinolta.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.EnterForm.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.Form1.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.FormAboutDialog.resources
+D:\work\TVSender Project\TVSender\obj\Release\SoundCatcher.FormConsole.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.FormNewChoice.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.FormScaner.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.KeyForm.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.OptionsForm1.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.Properties.Resources.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.AskSoundForm.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.OptionsSelectForm.resources
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.csproj.GenerateResource.cache
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.csproj.CoreCompileInputs.cache
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.exe
+D:\work\TVSender Project\TVSender\obj\Release\TVSender.pdb

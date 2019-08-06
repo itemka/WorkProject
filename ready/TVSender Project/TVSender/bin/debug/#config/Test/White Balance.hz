@@ -1,0 +1,13 @@
+[test]
+ktc.sn
+ktc.wb
+ktc.wb.chroma
+ktc.wb.minolta
+//ktc.vga
+//checkpass
+WBReset
+ktc.av
+testinput
+ktc.ir
+ktc.entersn
+clean

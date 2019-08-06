@@ -1,0 +1,7 @@
+[entersn]
+code = ee05e20100cc
+formEnterText
+read = >Write TV
+display = simple enter SN
+msg = ¬ведиет серийный номер
+

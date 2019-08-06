@@ -1,0 +1,11 @@
+
+[WBSettings]
+CoolX = 0.298
+CoolY = 0.311
+StandartX = 0.300
+StandartY = 0.335
+WarmX = 0.307
+WarmY = 0.320
+ToleranceXY = 0.005
+Average = true
+Green128Below = true

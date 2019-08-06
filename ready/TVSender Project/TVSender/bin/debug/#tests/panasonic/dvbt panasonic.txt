@@ -1,0 +1,9 @@
+[dvbt panasonic]
+code = ee05f06000b3
+form
+
+display = dvbt panasonic
+msg = Изображение и звук DVB-T соответствуют?
+image = toshiba/autoshow.jpg
+label = форма1
+

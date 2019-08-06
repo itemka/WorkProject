@@ -1,0 +1,79 @@
+Команды:        Их значение:
+
+NEC             RedRatNECSend
+RedratNEC       RedRatNECSend
+NECRedrat       RedRatNECSend
+
+Redrat          RedRatFullIRSend
+IR              RedRatFullIRSend
+RedratIR        RedRatFullIRSend
+
+code            Port1_Hex
+port1.code      Port1_Hex
+
+text            Port1_Txt
+txt             Port1_Txt
+port1.text      Port1_Txt
+port1.txt       Port1_Txt
+
+genr            GenrSend
+
+port2.code      Port2_Hex
+
+port2.txt       Port2_Txt
+port2.text      Port2_Txt
+
+pause           Pause
+stop            Pause
+
+checkpass       CheckTestsPass
+
+Read            ReadFindSuccess
+Find            ReadFindSuccess
+ReadFind        ReadFindSuccess
+
+ReadFail        ReadFail
+ReadNG          ReadFail
+
+ReadBetween     SaveReadBetween
+SaveBetween     SaveReadBetween
+SaveReadBetween SaveReadBetween
+
+ReadAfter       SaveReadAfter
+SaveAfter       SaveReadAfter
+SaveReadAfter   SaveReadAfter
+
+Regex           RegexTxt
+RegexTxt        RegexTxt
+ReadEx          RegexTxt
+
+RegexHex        RegexHex
+RegexCode       RegexHex
+
+form            FormUsual
+form1           FormUsual
+
+Enter           Port1EntryText
+EnterText       Port1EntryText
+Input           Port1EntryText
+InputText       Port1EntryText
+EntryText       Port1EntryText
+
+EnterCode       Port1EntryHex
+EnterHex        Port1EntryHex
+InputCode       Port1EntryHex
+InputHex        Port1EntryHex
+
+form.sound      FormOscillograph
+form2           FormOscillograph
+
+irsound         IRSend
+soundir         IRSend
+
+{               VisualParameters
+}               VisualParameters
+display         VisualParameters
+message         VisualParameters
+msg             VisualParameters
+image           VisualParameters
+label           VisualParameters

@@ -1,0 +1,7 @@
+Ошибка. Не удалось открыть папку.
+
+System.InvalidOperationException: Невозможно запустить процесс, так как не указано имя файла.
+   в System.Diagnostics.Process.Start()
+   в System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   в System.Diagnostics.Process.Start(String fileName)
+   в TVSender.OptionsForm1.btnOpenConfigPath_Click(Object sender, EventArgs e) в F:\TVsender Project 06.11.2016\TVSender\OptionForm.cs:строка 315

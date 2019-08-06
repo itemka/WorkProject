@@ -1,0 +1,58 @@
+[grey]
+code = ee05f0cc00c7
+
+form
+
+display = grey
+msg = grey
+image = toshiba/autoshow.jpg
+label = форма1
+
+[white]
+code = ee05f0cc00c2
+form
+
+display = white
+msg = white
+image = toshiba/autoshow.jpg
+label = форма1
+
+[black]
+code = ee05f0cc00c6
+form
+
+display = black
+msg = black
+image = toshiba/autoshow.jpg
+label = форма1
+
+[red]
+code = ee05f0cc00c3
+form
+
+display = red
+msg = red
+image = toshiba/autoshow.jpg
+label = форма1
+
+[green]
+code = ee05f0cc00c4
+form
+
+display = green
+msg = green
+image = toshiba/autoshow.jpg
+label = форма1
+
+[blue]
+code = ee05f0cc00c5
+form
+
+display = blue
+msg = blue
+image = toshiba/autoshow.jpg
+label = форма1
+
+[color.off]
+code = ee05f0cc00c1
+display = color.off

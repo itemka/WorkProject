@@ -1,0 +1,5 @@
+[redrat.prestig.down]
+nec=007f56
+
+[redrat.prestig.up]
+nec=007f5e

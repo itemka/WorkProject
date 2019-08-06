@@ -1,0 +1,4 @@
+[full.sw32]
+code = ee05f070009b
+read = Aug 16 2016
+display = sw

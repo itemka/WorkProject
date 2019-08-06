@@ -1,0 +1,4 @@
+
+[ard.finish]
+text = <exe=0>
+display= нажать стопор

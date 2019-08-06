@@ -1,0 +1,25 @@
+[ktc.sn]
+code = ee05e20101cc
+readfail = n.g.
+{
+	code = ee05e20100cc
+	EntryText
+	readfind = >Write TV
+	stop = 1000
+	code = ee05e20101cc
+	readafter = 545620532F4E3A, 14
+}
+code = ee05e20101cc
+readfail = 54 56 20 53 2F 4E 3A 00
+{
+	code = ee05e20100cc
+	EntryText
+	readfind = >Write TV
+	stop = 1000
+	code = ee05e20101cc
+	readafter = 545620532F4E3A, 14
+}
+code = ee05e20101cc
+readafter = 545620532F4E3A, 14
+display = Full Serial Number
+msg = ¬ведите серийный номер

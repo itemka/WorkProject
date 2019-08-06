@@ -1,0 +1,8 @@
+14:15:37:658 |Info| thread 1| TVSender.Code.OpenRestart |163  Ошибка=Порт 'COM6' не существует.
+14:15:37:658 |Debug| thread 1| DisableDevice.DeviceManagerApi.ToogleComPortDevice |59  Start: COM6 False
+14:15:38:577 |Error| thread 1|  |267  throw Порт COM6 отсутствует в диспетчере устройств.
+14:15:38:599 |Error| thread 1| TVSender.Code.ComRestart |141  COM6: Порт COM6 отсутствует в диспетчере устройств.
+14:15:38:628 |Debug| thread 1| TVSender.Form1.Form1_Shown |1289  isAutoStart = False
+14:15:40:534 |Trace| thread 1| TVSender.Ex.Try |64  Значение не может быть неопределенным.
+Имя параметра: path
+14:15:59:561 |Trace| thread 1| TVSender.Code.ClosePorts |92  ClosePorts()

@@ -1,0 +1,9 @@
+e:\C#\testCA-410\project2\bin\Debug\project2.exe.config
+e:\C#\testCA-410\project2\bin\Debug\project2.exe
+e:\C#\testCA-410\project2\bin\Debug\project2.pdb
+e:\C#\testCA-410\project2\bin\Debug\CASDK2Net.dll
+e:\C#\testCA-410\project2\obj\Debug\project2.csprojAssemblyReference.cache
+e:\C#\testCA-410\project2\obj\Debug\project2.csproj.CoreCompileInputs.cache
+e:\C#\testCA-410\project2\obj\Debug\project2.csproj.CopyComplete
+e:\C#\testCA-410\project2\obj\Debug\project2.exe
+e:\C#\testCA-410\project2\obj\Debug\project2.pdb

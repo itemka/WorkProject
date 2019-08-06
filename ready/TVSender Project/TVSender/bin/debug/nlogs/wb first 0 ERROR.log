@@ -1,0 +1,500 @@
+09:36:34:931 |Trace|thread 24|  |  START
+09:36:35:665 |Debug|thread 24|  |  TempData: |0,128,128,128| SaveDataNumber=0|
+09:36:35:665 |Debug|thread 24|  |  TempData: |1,128,128,128| SaveDataNumber=0|
+09:36:35:665 |Debug|thread 24|  |  TempData: |2,128,128,128| SaveDataNumber=0|
+09:36:35:665 |Debug|thread 24|  |  ReserveTempData: |0,128,128,128| ReservedSaveNumbers=0|
+09:36:35:665 |Debug|thread 24|  |  ReserveTempData: |1,128,128,128| ReservedSaveNumbers=0|
+09:36:35:665 |Debug|thread 24|  |  ReserveTempData: |2,128,128,128| ReservedSaveNumbers=0|
+09:36:35:665 |Trace|thread 24|  |  ColorTemp default=
+0,128,128,128
+1,128,128,128
+2,128,128,128
+
+09:36:35:665 |Trace|thread 24|  |  StartDataFile -> uColorTemp_StartStepSum=
+0,0,0,0,0
+1,0,0,0,0
+2,0,0,0,0
+3,128
+09:36:35:822 |Debug|thread 24|  |  START panasonic TX-32DR300ZZ; sn=;
+09:36:37:415 |Trace|thread 24|  |  case=1; Timer.Interval=75;
+09:36:37:415 |Trace|thread 24|  |  Write TV => 16 1 0 0
+09:36:37:494 |Trace|thread 7|  |  Read byte <= 172 4 0 79
+09:36:37:494 |Trace|thread 7|  |  Read hex <= ac04004f
+09:36:37:509 |Trace|thread 24|  |  case=2; Timer.Interval=80;
+09:36:37:509 |Trace|thread 24|  |  Write TV => 11 0 0 0
+09:36:37:556 |Trace|thread 7|  |  Read byte <= 172 12 139 131 122 149 141 122 147 132 109 159
+09:36:37:556 |Trace|thread 7|  |  Read hex <= ac0c8b837a958d7a93846d9f
+09:36:37:556 |Trace|thread 7|  |  TV -> ColorTemp -> TempDataFile:
+0,139,131,122
+1,149,141,122
+2,147,132,109
+
+09:36:37:603 |Trace|thread 24|  |  case=3; Timer.Interval=80;
+09:36:37:697 |Trace|thread 24|  |  case=7; Timer.Interval=80;
+09:36:37:697 |Debug|thread 24|  |  set TV = COOL
+09:36:37:697 |Trace|thread 24|  |  Write TV => 1 0 0 0
+09:36:37:744 |Trace|thread 14|  |  Read byte <= 172 4 0 79
+09:36:37:744 |Trace|thread 14|  |  Read hex <= ac04004f
+09:36:37:790 |Trace|thread 24|  |  case=8; Timer.Interval=80;
+09:36:37:994 |Trace|thread 24|  |  Measure=288,1, 316,8; Lv=203,5;
+09:36:37:994 |Debug|thread 24|  |  before=2881,3168,203,5
+09:36:37:994 |Debug|thread 24|  |  set TV = NORMAL
+09:36:37:994 |Trace|thread 24|  |  Write TV => 1 1 0 0
+09:36:37:994 |Trace|thread 24|  |  case=9; Timer.Interval=80;
+09:36:38:040 |Trace|thread 7|  |  Read byte <= 172 4 0 79
+09:36:38:040 |Trace|thread 7|  |  Read hex <= ac04004f
+09:36:38:212 |Trace|thread 24|  |  Measure=291,2, 323,4; Lv=214,3;
+09:36:38:212 |Debug|thread 24|  |  before=2912,3234,214,3
+09:36:38:212 |Debug|thread 24|  |  set TV = WARM
+09:36:38:212 |Trace|thread 24|  |  Write TV => 1 2 0 0
+09:36:38:212 |Trace|thread 24|  |  case=10; Timer.Interval=80;
+09:36:38:275 |Trace|thread 14|  |  Read byte <= 172 4 0 79
+09:36:38:275 |Trace|thread 14|  |  Read hex <= ac04004f
+09:36:38:431 |Trace|thread 24|  |  Measure=298,5, 338,4; Lv=241,8;
+09:36:38:431 |Debug|thread 24|  |  before=2985,3384,241,8
+09:36:38:431 |Debug|thread 24|  |  set TV = NORMAL
+09:36:38:431 |Trace|thread 24|  |  Write TV => 1 1 0 0
+09:36:38:431 |Trace|thread 24|  |  case=5; Timer.Interval=80;
+09:36:38:462 |Trace|thread 14|  |  Read byte <= 172 4 0 79
+09:36:38:462 |Trace|thread 14|  |  Read hex <= ac04004f
+09:36:38:509 |Trace|thread 24|  |  case=11; Timer.Interval=65;
+09:36:38:712 |Trace|thread 24|  |  Measure=303,5, 342,6; Lv=227,4;
+09:36:38:915 |Trace|thread 24|  |  set TV RGB: 128, 128, 128
+09:36:38:915 |Trace|thread 24|  |  Write TV => 12 128 128 128
+09:36:38:915 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:38:978 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:38:978 |Trace|thread 18|  |  Read byte <= 172 4 0 79 103 95 97 115 116 87 104 105 116 101 66 97 108 97 110 99 101 32 99 104 97 110 103 101 100 33 13 10 71 95 70 65 67 84 79 82 89 95 83 69 84 84 73 78 71 32 99 104 97 110 103 101 100 33 13 10
+09:36:38:978 |Trace|thread 18|  |  Read hex <= ac04004f675f617374576869746542616c616e6365206368616e676564210d0a475f464143544f52595f53455454494e47206368616e676564210d0a
+09:36:39:056 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:072 |Trace|thread 14|  |  Read byte <= 32 62 62 32 87 114 105 116 101 32 102 108 97 115 104 32 100 111 110 101 126 32 61 62 32 85 110 105 116 73 100 120 61 49 51 44 32 119 116 61 56 57 52 44 32 117 115 101 32 54 48 109 115 13 10
+09:36:39:072 |Trace|thread 14|  |  Read hex <= 203e3e20577269746520666c61736820646f6e657e203d3e20556e69744964783d31332c2077743d3839342c207573652036306d730d0a
+09:36:39:134 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:212 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:291 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:369 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:447 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:525 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:603 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:681 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:759 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:837 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:916 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:39:994 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:40:072 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:40:072 |Trace|thread 24|  |  set TV RGB: 128, 128, 128
+09:36:40:072 |Trace|thread 24|  |  Write TV => 12 128 128 128
+09:36:40:119 |Trace|thread 7|  |  Read byte <= 172 4 0 79
+09:36:40:119 |Trace|thread 7|  |  Read hex <= ac04004f
+09:36:40:150 |Trace|thread 24|  |  case=12; Timer.Interval=65;
+09:36:40:353 |Trace|thread 24|  |  Measure=271,3, 295,2; Lv=190,8;
+09:36:40:353 |Trace|thread 24|  |  set TV RGB: 136, 136, 136
+09:36:40:353 |Trace|thread 24|  |  Write TV => 12 136 136 136
+09:36:40:353 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:40:384 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:40:416 |Trace|thread 7|  |  Read byte <= 172 4 0 79
+09:36:40:416 |Trace|thread 7|  |  Read hex <= ac04004f
+09:36:40:462 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:40:666 |Trace|thread 24|  |  Measure=271,6, 297,1; Lv=211,4;
+09:36:40:666 |Trace|thread 24|  |  set TV RGB: 144, 144, 144
+09:36:40:666 |Trace|thread 24|  |  Write TV => 12 144 144 144
+09:36:40:666 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:40:697 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:40:728 |Trace|thread 7|  |  Read byte <= 172 4 0 79
+09:36:40:728 |Trace|thread 7|  |  Read hex <= ac04004f
+09:36:40:775 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:40:978 |Trace|thread 24|  |  Measure=272,6, 300,4; Lv=244,8;
+09:36:40:978 |Trace|thread 24|  |  set TV RGB: 152, 152, 152
+09:36:40:978 |Trace|thread 24|  |  Write TV => 12 152 152 152
+09:36:40:978 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:40:994 |Trace|thread 19|  |  Read byte <= 103 95 97 115 116 87 104 105 116 101 66 97 108 97 110 99 101 32 99 104 97 110 103 101 100 33 13 10 71 95 70 65 67 84 79 82 89 95 83 69 84 84 73 78 71 32 99 104 97 110 103 101 100 33 13 10
+09:36:40:994 |Trace|thread 19|  |  Read hex <= 675f617374576869746542616c616e6365206368616e676564210d0a475f464143544f52595f53455454494e47206368616e676564210d0a
+09:36:41:009 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:41:041 |Trace|thread 7|  |  Read byte <= 172 4 0 79
+09:36:41:041 |Trace|thread 7|  |  Read hex <= ac04004f
+09:36:41:088 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:41:103 |Trace|thread 7|  |  Read byte <= 32 62 62 32 87 114 105 116 101 32 102 108 97 115 104 32 100 111 110 101 126 32 61 62 32 85 110 105 116 73 100 120 61 49 52 44 32 119 116 61 56 57 53 44 32 117 115 101 32 54 48 109 115 13 10
+09:36:41:103 |Trace|thread 7|  |  Read hex <= 203e3e20577269746520666c61736820646f6e657e203d3e20556e69744964783d31342c2077743d3839352c207573652036306d730d0a
+09:36:41:291 |Trace|thread 24|  |  Measure=274,1, 303,9; Lv=268,9;
+09:36:41:291 |Trace|thread 24|  |  set TV RGB: 160, 160, 160
+09:36:41:291 |Trace|thread 24|  |  Write TV => 12 160 160 160
+09:36:41:291 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:41:322 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:41:338 |Trace|thread 19|  |  Read byte <= 172 4 0 79
+09:36:41:338 |Trace|thread 19|  |  Read hex <= ac04004f
+09:36:41:400 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:41:603 |Trace|thread 24|  |  Measure=275,1, 306,2; Lv=282,2;
+09:36:41:603 |Trace|thread 24|  |  set TV RGB: 168, 168, 168
+09:36:41:603 |Trace|thread 24|  |  Write TV => 12 168 168 168
+09:36:41:603 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:41:634 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:41:650 |Trace|thread 18|  |  Read byte <= 172 4 0 79
+09:36:41:650 |Trace|thread 18|  |  Read hex <= ac04004f
+09:36:41:713 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:41:916 |Trace|thread 24|  |  Measure=275,1, 306,2; Lv=282,2;
+09:36:41:916 |Trace|thread 24|  |  set TV RGB: 152, 152, 152
+09:36:41:916 |Trace|thread 24|  |  Write TV => 12 152 152 152
+09:36:41:916 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:41:947 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:41:963 |Trace|thread 18|  |  Read byte <= 172 4 0 79
+09:36:41:963 |Trace|thread 18|  |  Read hex <= ac04004f
+09:36:42:025 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:42:228 |Trace|thread 24|  |  Measure=275,1, 306,2; Lv=282,2;
+09:36:42:228 |Trace|thread 24|  |  set TV RGB: 144, 144, 144
+09:36:42:228 |Trace|thread 24|  |  Write TV => 12 144 144 144
+09:36:42:228 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:42:259 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:42:275 |Trace|thread 19|  |  Read byte <= 172 4 0 79
+09:36:42:275 |Trace|thread 19|  |  Read hex <= ac04004f
+09:36:42:338 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:42:541 |Trace|thread 24|  |  Measure=273,3, 301,4; Lv=256,3;
+09:36:42:541 |Trace|thread 24|  |  set TV RGB: 146, 146, 146
+09:36:42:541 |Trace|thread 24|  |  Write TV => 12 146 146 146
+09:36:42:541 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:42:572 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:42:588 |Trace|thread 18|  |  Read byte <= 172 4 0 79
+09:36:42:588 |Trace|thread 18|  |  Read hex <= ac04004f
+09:36:42:650 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:42:853 |Trace|thread 24|  |  Measure=273, 301,1; Lv=266,4;
+09:36:42:853 |Trace|thread 24|  |  set TV RGB: 148, 148, 148
+09:36:42:853 |Trace|thread 24|  |  Write TV => 12 148 148 148
+09:36:42:853 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:42:885 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:42:916 |Trace|thread 18|  |  Read byte <= 172 4 0 79
+09:36:42:916 |Trace|thread 18|  |  Read hex <= ac04004f
+09:36:42:963 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:166 |Trace|thread 24|  |  Measure=274,2, 305; Lv=279,4;
+09:36:43:166 |Trace|thread 24|  |  set TV RGB: 150, 150, 150
+09:36:43:166 |Trace|thread 24|  |  Write TV => 12 150 150 150
+09:36:43:166 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:197 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:228 |Trace|thread 18|  |  Read byte <= 103 95 97 115 116 87 104 105 116 101 66 97 108 97 110 99 101 32 99 104 97 110 103 101 100 33 13 10 71 95 70 65 67 84 79 82 89 95 83 69 84 84 73 78 71 32 99 104 97 110 103 101 100 33 13 10 32 62 62 32 87 114 105 116 101 32 102 108 97 115 104 32 100 111 110 101 126 32 61 62 32 85 110 105 116 73 100 120 61 49 53 44 32 119 116 61 56 57 54 44 32 117 115 101 32 54 48 109 115 13 10 172 4 0 79
+09:36:43:228 |Trace|thread 18|  |  Read hex <= 675f617374576869746542616c616e6365206368616e676564210d0a475f464143544f52595f53455454494e47206368616e676564210d0a203e3e20577269746520666c61736820646f6e657e203d3e20556e69744964783d31352c2077743d3839362c207573652036306d730d0aac04004f
+09:36:43:275 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:353 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:431 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:510 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:588 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:666 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:744 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:822 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:900 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:43:978 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:44:056 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:44:135 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:44:213 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:44:291 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:44:291 |Trace|thread 24|  |  set TV RGB: 150, 150, 150
+09:36:44:291 |Trace|thread 24|  |  Write TV => 12 150 150 150
+09:36:44:338 |Trace|thread 13|  |  Read byte <= 172 4 0 79
+09:36:44:338 |Trace|thread 13|  |  Read hex <= ac04004f
+09:36:44:369 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:44:572 |Trace|thread 24|  |  Measure=275,1, 306,2; Lv=282,2;
+09:36:44:572 |Trace|thread 24|  |  set TV RGB: 152, 152, 152
+09:36:44:572 |Trace|thread 24|  |  Write TV => 12 152 152 152
+09:36:44:572 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:44:603 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:44:603 |Trace|thread 18|  |  Read byte <= 172 4 0 79
+09:36:44:603 |Trace|thread 18|  |  Read hex <= ac04004f
+09:36:44:682 |Trace|thread 24|  |  case=13; Timer.Interval=65;
+09:36:44:885 |Trace|thread 24|  |  Measure=275,1, 306,2; Lv=282,2;
+09:36:44:963 |Trace|thread 24|  |  case=14; Timer.Interval=75;
+09:36:45:025 |Trace|thread 17|  |  Read byte <= 103 95 97 115 116 87 104 105 116 101 66 97 108 97 110 99 101 32 99 104 97 110 103 101 100 33 13 10 71 95 70 65 67 84 79 82 89 95 83 69 84 84 73 78 71 32 99 104 97 110 103 101 100 33 13 10 32 67 97 110 39 116 32 102 105 110 100 32 97 110 121 32 101 109 112 116 121 32 117 110 105 116 44 32 110 101 101 100 32 116 111 32 101 114 97 115 101 13 10
+09:36:45:025 |Trace|thread 17|  |  Read hex <= 675f617374576869746542616c616e6365206368616e676564210d0a475f464143544f52595f53455454494e47206368616e676564210d0a2043616e27742066696e6420616e7920656d70747920756e69742c206e65656420746f2065726173650d0a
+09:36:45:057 |Trace|thread 17|  |  Read byte <= 69 114 97 115 101 32 102 108 97 115 104 32 98 97 110 107 61 48 120 55 69 13 10 95 109 115 65 80 73 95 68 66 95 71 69 78 95 69 114 97 115 101 70 108 97 115 104 40 117 56 66 97 110 107 61 48 120 55 69 44 32 119 97 105 116 61 48 41 13 10
+09:36:45:057 |Trace|thread 17|  |  Read hex <= 457261736520666c6173682062616e6b3d307837450d0a5f6d734150495f44425f47454e5f4572617365466c61736828753842616e6b3d307837452c20776169743d30290d0a
+09:36:45:072 |Trace|thread 24|  |  Write TV => 10 1 0 0
+09:36:45:072 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:119 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:197 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:275 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:275 |Trace|thread 17|  |  Read byte <= 172 4 0 79 71 69 78 58 32 70 108 97 115 104 32 98 117 115 121 13 10
+09:36:45:275 |Trace|thread 17|  |  Read hex <= ac04004f47454e3a20466c61736820627573790d0a
+09:36:45:353 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:385 |Trace|thread 18|  |  Read byte <= 71 69 78 58 32 70 108 97 115 104 32 98 117 115 121 13 10
+09:36:45:385 |Trace|thread 18|  |  Read hex <= 47454e3a20466c61736820627573790d0a
+09:36:45:432 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:510 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:572 |Trace|thread 17|  |  Read byte <= 32 62 62 32 87 114 105 116 101 32 102 108 97 115 104 32 100 111 110 101 126 32 61 62 32 85 110 105 116 73 100 120 61 48 44 32 119 116 61 56 57 55 44 32 117 115 101 32 53 51 109 115 13 10
+09:36:45:572 |Trace|thread 17|  |  Read hex <= 203e3e20577269746520666c61736820646f6e657e203d3e20556e69744964783d302c2077743d3839372c207573652035336d730d0a
+09:36:45:588 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:666 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:744 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:822 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:900 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:45:978 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:46:057 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:46:135 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:46:213 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:46:213 |Trace|thread 24|  |  Write TV => 10 1 0 0
+09:36:46:291 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:46:369 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:46:432 |Trace|thread 18|  |  Read byte <= 172 4 0 79
+09:36:46:432 |Trace|thread 18|  |  Read hex <= ac04004f
+09:36:46:447 |Trace|thread 24|  |  case=15; Timer.Interval=75;
+09:36:46:963 |Trace|thread 24|  |  Measure=275,1, 306,2; Lv=282,1;
+09:36:46:963 |Trace|thread 24|  |  Max Lv=282,1
+09:36:46:963 |Trace|thread 24|  |  Write TV => 10 0 0 0
+09:36:46:963 |Trace|thread 24|  |  case=25; Timer.Interval=75;
+09:36:46:994 |Trace|thread 24|  |  case=25; Timer.Interval=75;
+09:36:47:072 |Trace|thread 24|  |  case=25; Timer.Interval=75;
+09:36:47:150 |Trace|thread 24|  |  case=25; Timer.Interval=75;
+09:36:47:229 |Trace|thread 24|  |  case=25; Timer.Interval=75;
+09:36:47:307 |Trace|thread 24|  |  case=25; Timer.Interval=75;
+09:36:47:385 |Trace|thread 24|  |  case=25; Timer.Interval=75;
+09:36:47:385 |Trace|thread 17|  |  Read byte <= 172 4 0 79
+09:36:47:385 |Trace|thread 17|  |  Read hex <= ac04004f
+09:36:47:463 |Trace|thread 24|  |  case=25; Timer.Interval=75;
+09:36:47:541 |Trace|thread 24|  |  case=26; Timer.Interval=65;
+09:36:47:541 |Debug|thread 24|  |  set TV = COOL
+09:36:47:541 |Trace|thread 24|  |  Write TV => 1 0 0 0
+09:36:47:604 |Trace|thread 17|  |  Read byte <= 172 4 0 79
+09:36:47:604 |Trace|thread 17|  |  Read hex <= ac04004f
+09:36:47:619 |Trace|thread 24|  |  case=27; Timer.Interval=65;
+09:36:47:619 |Trace|thread 24|  |  set TV RGB: 139, 131, 122
+09:36:47:619 |Trace|thread 24|  |  Write TV => 12 139 131 122
+09:36:47:682 |Trace|thread 18|  |  Read byte <= 172 4 0 79
+09:36:47:682 |Trace|thread 18|  |  Read hex <= ac04004f
+09:36:47:697 |Trace|thread 24|  |  case=30; Timer.Interval=65;
+09:36:48:041 |Trace|thread 24|  |  case=99; Timer.Interval=65;
+09:36:48:088 |Trace|thread 24|  |  case=120; Timer.Interval=65;
+09:36:48:088 |Trace|thread 24|  |  Write TV => 16 0 0 0
+09:36:48:135 |Trace|thread 13|  |  Read byte <= 172 4 0 79
+09:36:48:135 |Trace|thread 13|  |  Read hex <= ac04004f
+09:36:48:166 |Trace|thread 24|  |  case=121; Timer.Interval=65;
+09:36:48:244 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:48:322 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:48:401 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:48:479 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:48:557 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:48:635 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:48:713 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:48:791 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:48:869 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:48:947 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:026 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:104 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:182 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:260 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:338 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:385 |Trace|thread 14|  |  Read byte <= 103 95 97 115 116 86 105 100 101 111 91 54 93 32 99 104 97 110 103 101 100 13 10
+09:36:49:385 |Trace|thread 14|  |  Read hex <= 675f617374566964656f5b365d206368616e6765640d0a
+09:36:49:416 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:494 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:494 |Trace|thread 17|  |  Read byte <= 32 62 62 32 87 114 105 116 101 32 102 108 97 115 104 32 100 111 110 101 126 32 61 62 32 85 110 105 116 73 100 120 61 49 44 32 119 116 61 56 57 56 44 32 117 115 101 32 54 48 109 115 13 10
+09:36:49:494 |Trace|thread 17|  |  Read hex <= 203e3e20577269746520666c61736820646f6e657e203d3e20556e69744964783d312c2077743d3839382c207573652036306d730d0a
+09:36:49:572 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:651 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:729 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:807 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:885 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:49:963 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:041 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:119 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:198 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:276 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:354 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:432 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:510 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:588 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:666 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:744 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:823 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:901 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:50:979 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:057 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:135 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:213 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:291 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:369 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:448 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:526 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:604 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:682 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:760 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:838 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:916 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:51:995 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:073 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:151 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:229 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:307 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:385 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:463 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:541 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:620 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:698 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:776 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:854 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:52:932 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:010 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:088 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:166 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:245 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:323 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:401 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:479 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:557 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:635 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:713 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:792 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:870 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:53:948 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:026 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:104 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:182 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:260 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:338 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:417 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:495 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:573 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:651 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:729 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:807 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:885 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:54:963 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:042 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:120 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:198 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:276 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:354 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:432 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:510 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:589 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:667 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:745 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:823 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:901 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:55:979 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:057 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:135 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:214 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:292 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:370 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:448 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:526 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:604 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:682 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:760 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:839 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:917 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:56:995 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:073 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:151 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:229 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:307 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:386 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:464 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:542 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:620 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:698 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:776 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:854 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:57:932 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:011 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:089 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:167 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:245 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:323 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:401 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:479 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:557 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:636 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:714 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:792 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:870 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:58:948 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:026 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:104 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:183 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:261 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:339 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:417 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:495 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:573 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:651 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:729 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:808 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:886 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:36:59:964 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:042 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:120 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:198 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:276 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:354 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:433 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:511 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:589 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:667 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:745 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:823 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:901 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:00:980 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:058 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:136 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:214 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:292 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:370 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:448 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:526 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:605 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:683 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:761 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:839 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:917 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:01:995 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:073 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:151 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:230 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:308 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:386 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:464 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:542 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:620 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:698 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:777 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:855 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:02:933 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:011 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:089 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:167 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:245 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:323 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:402 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:480 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:558 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:636 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:714 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:792 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:870 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:03:948 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:027 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:105 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:183 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:261 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:339 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:417 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:495 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:574 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:652 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:730 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:808 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:886 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:04:964 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:042 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:120 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:199 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:277 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:355 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:433 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:511 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:589 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:667 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:745 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:824 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:05:902 |Trace|thread 24|  |  case=0; Timer.Interval=65;
+09:37:06:011 |Trace|thread 24|  |  uColorTempAdj_Data=: 
+0,139,131,122
+1,148,148,148
+2,128,128,128
+
+09:37:06:011 |Trace|thread 24|  |  END

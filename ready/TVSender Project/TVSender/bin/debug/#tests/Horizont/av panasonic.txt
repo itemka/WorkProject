@@ -1,0 +1,9 @@
+[av Horizont]
+code = ee05f06100a8
+form
+
+display = av Horizont
+//msg = Изображение и звук AV  соответствуют?
+//image = toshiba/autoshow.jpg
+label = форма1
+

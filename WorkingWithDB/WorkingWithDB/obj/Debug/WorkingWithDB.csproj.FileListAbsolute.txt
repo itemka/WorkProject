@@ -1,0 +1,11 @@
+E:\Project C#\WorkingWithDB\WorkingWithDB\bin\Debug\Database.mdf
+E:\Project C#\WorkingWithDB\WorkingWithDB\bin\Debug\Database_log.ldf
+E:\Project C#\WorkingWithDB\WorkingWithDB\bin\Debug\WorkingWithDB.exe
+E:\Project C#\WorkingWithDB\WorkingWithDB\bin\Debug\WorkingWithDB.pdb
+E:\Project C#\WorkingWithDB\WorkingWithDB\obj\Debug\WorkingWithDB.csprojAssemblyReference.cache
+E:\Project C#\WorkingWithDB\WorkingWithDB\obj\Debug\WorkingWithDB.Form1.resources
+E:\Project C#\WorkingWithDB\WorkingWithDB\obj\Debug\WorkingWithDB.Properties.Resources.resources
+E:\Project C#\WorkingWithDB\WorkingWithDB\obj\Debug\WorkingWithDB.csproj.GenerateResource.cache
+E:\Project C#\WorkingWithDB\WorkingWithDB\obj\Debug\WorkingWithDB.csproj.CoreCompileInputs.cache
+E:\Project C#\WorkingWithDB\WorkingWithDB\obj\Debug\WorkingWithDB.exe
+E:\Project C#\WorkingWithDB\WorkingWithDB\obj\Debug\WorkingWithDB.pdb

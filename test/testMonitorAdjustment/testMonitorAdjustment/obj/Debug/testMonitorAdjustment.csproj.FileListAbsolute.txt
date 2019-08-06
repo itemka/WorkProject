@@ -1,0 +1,9 @@
+D:\C#\testMonitorAdjustment\testMonitorAdjustment\bin\Debug\testMonitorAdjustment.exe
+D:\C#\testMonitorAdjustment\testMonitorAdjustment\bin\Debug\testMonitorAdjustment.pdb
+D:\C#\testMonitorAdjustment\testMonitorAdjustment\obj\Debug\testMonitorAdjustment.csprojAssemblyReference.cache
+D:\C#\testMonitorAdjustment\testMonitorAdjustment\obj\Debug\testMonitorAdjustment.Form1.resources
+D:\C#\testMonitorAdjustment\testMonitorAdjustment\obj\Debug\testMonitorAdjustment.Properties.Resources.resources
+D:\C#\testMonitorAdjustment\testMonitorAdjustment\obj\Debug\testMonitorAdjustment.csproj.GenerateResource.cache
+D:\C#\testMonitorAdjustment\testMonitorAdjustment\obj\Debug\testMonitorAdjustment.csproj.CoreCompileInputs.cache
+D:\C#\testMonitorAdjustment\testMonitorAdjustment\obj\Debug\testMonitorAdjustment.exe
+D:\C#\testMonitorAdjustment\testMonitorAdjustment\obj\Debug\testMonitorAdjustment.pdb

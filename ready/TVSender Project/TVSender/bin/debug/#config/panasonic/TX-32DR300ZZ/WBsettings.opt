@@ -1,0 +1,18 @@
+
+[WBsettings]
+Average = true
+CoolX = 0.285
+CoolY = 0.318
+WarmX = 0.311
+WarmY = 0.350
+StandartX = 0.300
+StandartY = 0.342
+ToleranceXY = 0.005
+Green128Below = true
+MinusMaxLv = 0
+MinimumLvCool = 65
+MinimumLvStandart = 65
+MinimumLvWarm = 60
+LimitRGB = false
+AverageNumber = 3
+MaxRGBValue = 170

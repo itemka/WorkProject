@@ -1,0 +1,13 @@
+[Generator]
+VGA.tim=333
+VGA.pat=555
+HDMI.tim=71
+HDMI.pat=3505
+SCART.tim=9999
+SCART.pat=6666
+SCART.RGB.tim=3601
+SCART.RGB.pat=3505
+3D.tim = 74
+3D.pat = 803
+cmp.tim = 105
+cmp.pat = 601

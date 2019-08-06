@@ -1,0 +1,13 @@
+[kts]
+//ktc.sn
+genr.vga
+vga Horizont
+//av Horizont
+//genr.hdmi
+//hdmi3 Horizont
+//осциллограф
+ktc.keys
+full.sw43
+//checkpass
+reset
+clean

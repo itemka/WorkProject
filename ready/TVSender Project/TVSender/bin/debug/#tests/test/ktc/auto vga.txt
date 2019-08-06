@@ -1,0 +1,8 @@
+[test.vga.auto]
+code = ee05f06100a7
+display = vga auto
+stop=1000
+
+[test.auto.send]
+code = ee05f06100a7
+display = just send

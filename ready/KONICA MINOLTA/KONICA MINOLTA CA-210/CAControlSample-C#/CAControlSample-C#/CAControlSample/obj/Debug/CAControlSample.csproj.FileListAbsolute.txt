@@ -1,0 +1,14 @@
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\bin\Debug\CAControlSample.exe.config
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\bin\Debug\CAControlSample.exe
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\bin\Debug\CAControlSample.pdb
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\bin\Debug\CaControl.dll
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\obj\Debug\CAControlSample.csprojAssemblyReference.cache
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\obj\Debug\Interop.CA200SRVRLib.dll
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\obj\Debug\CAControlSample.csproj.ResolveComReference.cache
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\obj\Debug\CAControlSample.Form1.resources
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\obj\Debug\CAControlSample.Properties.Resources.resources
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\obj\Debug\CAControlSample.csproj.GenerateResource.cache
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\obj\Debug\CAControlSample.csproj.CoreCompileInputs.cache
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\obj\Debug\CAControlSample.csproj.CopyComplete
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\obj\Debug\CAControlSample.exe
+e:\Project C#\ca-210\CAControlSample-C#\CAControlSample-C#\CAControlSample\obj\Debug\CAControlSample.pdb

@@ -1,0 +1,4 @@
+System.Exception: Нет ответа от COM2-порта.
+   в TVSender.ChromaCOM.Measure(Boolean SilentException) в F:\TVsender Project 06.11.2016\TVSender\WhiteBalanceChroma.cs:строка 3284
+   в TVSender.ChromaCOM.<CheckReadyToWork>b__0() в F:\TVsender Project 06.11.2016\TVSender\WhiteBalanceChroma.cs:строка 3156
+   в TVSender.PublicData.Try(MethodInvoker func) в F:\TVsender Project 06.11.2016\TVSender\PublicData.cs:строка 500

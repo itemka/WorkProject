@@ -1,0 +1,3 @@
+[test.readfail]
+code = ee05e20101cc
+readfail = n.g.

@@ -1,0 +1,9 @@
+E:\C#\CH15NetworkMachine2015\CH15NetworkMachine2015\bin\Debug\CH15NetworkMachine2015.exe
+E:\C#\CH15NetworkMachine2015\CH15NetworkMachine2015\bin\Debug\CH15NetworkMachine2015.pdb
+E:\C#\CH15NetworkMachine2015\CH15NetworkMachine2015\obj\Debug\CH15NetworkMachine2015.csprojAssemblyReference.cache
+E:\C#\CH15NetworkMachine2015\CH15NetworkMachine2015\obj\Debug\CH15NetworkMachine2015.Form1.resources
+E:\C#\CH15NetworkMachine2015\CH15NetworkMachine2015\obj\Debug\CH15NetworkMachine2015.Properties.Resources.resources
+E:\C#\CH15NetworkMachine2015\CH15NetworkMachine2015\obj\Debug\CH15NetworkMachine2015.csproj.GenerateResource.cache
+E:\C#\CH15NetworkMachine2015\CH15NetworkMachine2015\obj\Debug\CH15NetworkMachine2015.csproj.CoreCompileInputs.cache
+E:\C#\CH15NetworkMachine2015\CH15NetworkMachine2015\obj\Debug\CH15NetworkMachine2015.exe
+E:\C#\CH15NetworkMachine2015\CH15NetworkMachine2015\obj\Debug\CH15NetworkMachine2015.pdb

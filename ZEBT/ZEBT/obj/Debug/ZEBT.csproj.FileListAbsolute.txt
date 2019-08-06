@@ -1,0 +1,14 @@
+D:\C#\ZEBT\ZEBT\obj\Debug\ZEBT.csprojAssemblyReference.cache
+D:\C#\ZEBT\ZEBT\obj\Debug\ZEBT.Form1.resources
+D:\C#\ZEBT\ZEBT\obj\Debug\ZEBT.csproj.GenerateResource.cache
+D:\C#\ZEBT\ZEBT\obj\Debug\ZEBT.csproj.CoreCompileInputs.cache
+D:\C#\ZEBT\ZEBT\bin\Debug\DatabaseObrazec.mdf
+D:\C#\ZEBT\ZEBT\bin\Debug\DatabaseObrazec_log.ldf
+D:\C#\ZEBT\ZEBT\obj\Debug\ZEBT.csproj.ResolveComReference.cache
+D:\C#\ZEBT\ZEBT\bin\Debug\ZEBT.exe
+D:\C#\ZEBT\ZEBT\bin\Debug\ZEBT.pdb
+D:\C#\ZEBT\ZEBT\obj\Debug\ZEBT.Properties.Resources.resources
+D:\C#\ZEBT\ZEBT\obj\Debug\ZEBT.UpdataListUsersHORIZONT.resources
+D:\C#\ZEBT\ZEBT\obj\Debug\ZEBT.exe
+D:\C#\ZEBT\ZEBT\obj\Debug\ZEBT.pdb
+D:\C#\ZEBT\ZEBT\obj\Debug\ZEBT.SendMessage.resources

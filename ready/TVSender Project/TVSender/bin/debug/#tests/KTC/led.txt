@@ -1,0 +1,6 @@
+[led]
+code = ee05f04200c4
+form
+code = ee05f04200c5
+display = LED
+msg = Проверьте загорелся ли диод
