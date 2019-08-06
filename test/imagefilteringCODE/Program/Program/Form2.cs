@@ -22,7 +22,7 @@ namespace Program
             this.FormClosing += new FormClosingEventHandler(Form2Closing);
         }
 
-        //изменение яркости
+        //изменение яркости edit brightness
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             if (Form1.full_name_of_image != "\0")

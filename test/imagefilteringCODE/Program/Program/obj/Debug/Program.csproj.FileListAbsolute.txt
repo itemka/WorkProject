@@ -31,3 +31,15 @@ D:\imagefilteringCODE\Program\Program\obj\Debug\Program.csproj.GenerateResource.
 D:\imagefilteringCODE\Program\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
 D:\imagefilteringCODE\Program\Program\obj\Debug\Program.exe
 D:\imagefilteringCODE\Program\Program\obj\Debug\Program.pdb
+D:\WorkProject\test\imagefilteringCODE\Program\Program\bin\Debug\Program.exe.config
+D:\WorkProject\test\imagefilteringCODE\Program\Program\bin\Debug\Program.exe
+D:\WorkProject\test\imagefilteringCODE\Program\Program\bin\Debug\Program.pdb
+D:\WorkProject\test\imagefilteringCODE\Program\Program\obj\Debug\Program.csprojAssemblyReference.cache
+D:\WorkProject\test\imagefilteringCODE\Program\Program\obj\Debug\Program.Form1.resources
+D:\WorkProject\test\imagefilteringCODE\Program\Program\obj\Debug\Program.Form2.resources
+D:\WorkProject\test\imagefilteringCODE\Program\Program\obj\Debug\Program.Form3.resources
+D:\WorkProject\test\imagefilteringCODE\Program\Program\obj\Debug\Program.Properties.Resources.resources
+D:\WorkProject\test\imagefilteringCODE\Program\Program\obj\Debug\Program.csproj.GenerateResource.cache
+D:\WorkProject\test\imagefilteringCODE\Program\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+D:\WorkProject\test\imagefilteringCODE\Program\Program\obj\Debug\Program.exe
+D:\WorkProject\test\imagefilteringCODE\Program\Program\obj\Debug\Program.pdb
