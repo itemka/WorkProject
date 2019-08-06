@@ -36,13 +36,15 @@
             this.поискСканаВВСегоднешнемФайлеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.minoltaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolsToolStripMenuItem});
+            this.toolsToolStripMenuItem,
+            this.minoltaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(251, 24);
@@ -102,6 +104,12 @@
             this.textBox2.Size = new System.Drawing.Size(227, 23);
             this.textBox2.TabIndex = 2;
             // 
+            // minoltaToolStripMenuItem
+            // 
+            this.minoltaToolStripMenuItem.Name = "minoltaToolStripMenuItem";
+            this.minoltaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.minoltaToolStripMenuItem.Text = "Minolta";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -133,6 +141,7 @@
         private System.Windows.Forms.ToolStripMenuItem поискСканаВВСегоднешнемФайлеToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ToolStripMenuItem minoltaToolStripMenuItem;
     }
 }
 
