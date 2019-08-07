@@ -35,6 +35,10 @@
     <ApplicationIcon>barcode_scanner_4249.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Interop.CA200SRVRLib">
+      <HintPath>.\Interop.CA200SRVRLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

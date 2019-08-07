@@ -147,6 +147,11 @@ namespace CH15NetworkMachine2015
 
         public static void CalibrateZero(string mes = "")
         {
+            if (MessageBox.Show("CalZero?", "CalZero", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+            {
+                return;
+            }
+
             try
             {
                 m_ICa.CalZero();
