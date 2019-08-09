@@ -3,24 +3,24 @@ using System.IO;
 using System.Data;
 using System.Linq;
 using System.Text;
-using WindowsInput;
+//using WindowsInput;
 using System.Drawing;
 using System.Threading;
 using System.Reflection;
 using System.Diagnostics;
-using WindowsInput.Native;
+//using WindowsInput.Native;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Threading.Tasks;
-using System.Windows.Automation;
+//using System.Windows.Automation;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using Automation = System.Windows.Automation;
+/*using Automation = System.Windows.Automation;*/
 using CA200SRVRLib;
 
-namespace ScanLogPanasonicGR300
+namespace MinoltaReset
 {
-    static class Program
+    public partial class Form2 : Form
     {
         //propertisForWithBalans
         public static ICas m_ICas;
@@ -31,22 +31,16 @@ namespace ScanLogPanasonicGR300
         public static bool isConnectedMinolta = false;
         public static int timeAfterAutostart;
 
-        /// <summary>
-        /// Главная точка входа для приложения.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        public Form2()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            InitializeComponent();
+        }
 
+        public void MinoltaRestart()
+        {
             Connect_Minolta();
+            //Thread.Sleep(1000);
             Disconnect_CA210();
-            if (isConnectedMinolta)
-            {
-                Application.Run(new Form1());
-            }
-            
         }
 
 
@@ -135,25 +129,24 @@ namespace ScanLogPanasonicGR300
             }
         }
 
-        //private static void Init_CA210()
-        //{
-        //    m_IMemory.ChannelNO = 15;
-        //    Thread.Sleep(50);
-        //    m_ICa.SetAnalogRange(2.5f, 2.5f);
-        //    //if (m_ICa.DisplayMode != 0)
-        //    //    m_ICa.DisplayMode = 0;
-        //    //m_IMemory.SetChannelID(" ");
-        //    //if (m_IMemory.ChannelID != "WB AutoAdj")
-        //    //    m_IMemory.SetChannelID("WB AutoAdj");
-        //    //m_ICa.Measure(1);
+        private static void Init_CA210()
+        {
+            m_IMemory.ChannelNO = 15;
+            Thread.Sleep(50);
+            m_ICa.SetAnalogRange(2.5f, 2.5f);
+            //if (m_ICa.DisplayMode != 0)
+            //    m_ICa.DisplayMode = 0;
+            //m_IMemory.SetChannelID(" ");
+            //if (m_IMemory.ChannelID != "WB AutoAdj")
+            //    m_IMemory.SetChannelID("WB AutoAdj");
+            //m_ICa.Measure(1);
 
-        //}
+        }
 
         public static void CalibrateZero(string mes = "")
         {
-            if (MessageBox.Show("Выполнить колиброву и запустить программу?", "CalZero", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+            if (MessageBox.Show("CalZero?", "CalZero", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
             {
-                isConnectedMinolta = false;
                 return;
             }
 
@@ -163,8 +156,7 @@ namespace ScanLogPanasonicGR300
             }
             catch (Exception exCal)
             {
-                MessageBox.Show("Колибровка не выполнена. Попробуйте еще раз.\n\n" + exCal);
-                isConnectedMinolta = false;
+                MessageBox.Show("Колибровка не выполнена.\n\n" + exCal);
                 string error2 = "CA Command Error\n--too bright\n--block light";
                 if (exCal.Message == error2)
                 {
@@ -178,7 +170,7 @@ namespace ScanLogPanasonicGR300
             try
             {
                 m_ICa.RemoteMode = 0;
-
+                
                 m_ICa = null;
                 m_ICa200 = null;
                 m_IProbe = null;
@@ -188,6 +180,5 @@ namespace ScanLogPanasonicGR300
             catch { }
         }
         #endregion
-
     }
 }
