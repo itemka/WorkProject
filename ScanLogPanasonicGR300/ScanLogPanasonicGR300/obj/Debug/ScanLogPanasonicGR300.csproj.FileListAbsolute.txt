@@ -22,3 +22,4 @@ d:\WorkProject\ScanLogPanasonicGR300\ScanLogPanasonicGR300\obj\Debug\ScanLogPana
 d:\WorkProject\ScanLogPanasonicGR300\ScanLogPanasonicGR300\obj\Debug\ScanLogPanasonicGR300.csproj.CopyComplete
 d:\WorkProject\ScanLogPanasonicGR300\ScanLogPanasonicGR300\obj\Debug\ScanLogPanasonicGR300.exe
 d:\WorkProject\ScanLogPanasonicGR300\ScanLogPanasonicGR300\obj\Debug\ScanLogPanasonicGR300.pdb
+D:\WorkProject\ScanLogPanasonicGR300\ScanLogPanasonicGR300\obj\Debug\ScanLogPanasonicGR300.FullScreen.resources

@@ -44,6 +44,7 @@ namespace ScanLogPanasonicGR300
             Disconnect_CA210();
             if (isConnectedMinolta)
             {
+
                 Application.Run(new Form1());
             }
             
@@ -52,7 +53,7 @@ namespace ScanLogPanasonicGR300
 
         #region White Balance
         public static void Connect_Minolta()
-        {
+        {            
             try
             {
                 m_ICa.Measure(1);
@@ -94,8 +95,8 @@ namespace ScanLogPanasonicGR300
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка! Проверьте USB соединение с Минолтой.\n\n\n" + ex,
-                    "Не удается подключить к Минолте по USB ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ошибка! Не удалось подключиться к Минолте по USB.\nПроверьте USB соединение с Минолтой.\n\n\n\n\n\n" + ex,
+                    "Не удается подключить к Минолте по USB", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 //this.buttonConnectUSB.Enabled = true;
                 isConnectedMinolta = false;
                 return;
@@ -151,19 +152,22 @@ namespace ScanLogPanasonicGR300
 
         public static void CalibrateZero(string mes = "")
         {
-            if (MessageBox.Show("Выполнить колиброву и запустить программу?", "CalZero", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+            var FS = new FullScreen("Please wait...", Color.LimeGreen);
+            if (MessageBox.Show("Выполнить калибровку и запустить программу?", "CalZero", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
             {
                 isConnectedMinolta = false;
                 return;
             }
-
+            
             try
             {
+                FS.Show();
                 m_ICa.CalZero();
+                FS.Close();
             }
             catch (Exception exCal)
             {
-                MessageBox.Show("Колибровка не выполнена. Попробуйте еще раз.\n\n" + exCal);
+                MessageBox.Show("Ошибка! Не удалось подключиться к Минолте по USB.\nПроверьте USB соединение с Минолтой.\n\n\n\n\n\n" + exCal, "Не удается подключить к Минолте по USB");
                 isConnectedMinolta = false;
                 string error2 = "CA Command Error\n--too bright\n--block light";
                 if (exCal.Message == error2)
@@ -171,6 +175,7 @@ namespace ScanLogPanasonicGR300
                     CalibrateZero("Слишком ярко!");
                 }
             }
+            
         }
 
         public static void Disconnect_CA210()
