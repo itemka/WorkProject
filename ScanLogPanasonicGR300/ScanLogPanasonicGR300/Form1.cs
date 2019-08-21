@@ -55,9 +55,9 @@ namespace ScanLogPanasonicGR300
             public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
             [DllImport("user32.dll", CharSet = CharSet.Auto)]
             public static extern IntPtr FindWindowEx(IntPtr hwndParent, IntPtr hwndChildAfter, string className, string windowName);
-            [DllImport("USER32.DLL")]
+            [DllImport("user32.dll")]
             public static extern bool SetForegroundWindow(IntPtr hWnd);
-
+        
             [DllImport("user32.dll", CharSet = CharSet.Auto)]
             private static extern int SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
 
@@ -75,6 +75,7 @@ namespace ScanLogPanasonicGR300
 
         public Form1()
         {
+            this.SetStyle(ControlStyles.Selectable, false);
             //Connect_Minolta();
             //Disconnect_CA210();
 
