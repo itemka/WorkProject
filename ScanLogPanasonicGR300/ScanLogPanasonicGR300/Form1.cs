@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Threading;
 using System.Reflection;
 using System.Diagnostics;
-using WindowsInput.Native;
+using System.Windows.Input;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Threading.Tasks;
@@ -17,21 +17,13 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Automation = System.Windows.Automation;
 using CA200SRVRLib;
+using Hooks;
 
 
 namespace ScanLogPanasonicGR300
 {
     public partial class Form1 : Form
     {
-        ////propertisForWithBalans
-        //public static ICas m_ICas;
-        //public static ICa m_ICa;
-        //public static IProbe m_IProbe;
-        //public static IMemory m_IMemory;
-        //public static ICa200 m_ICa200; //= (ICa200)new Ca200Class();
-        //public static bool isConnectedMinolta = false;
-        //public static int timeAfterAutostart;
-
         #region Variables, Contsant for keyboard and Dll
         static string DirectoriOne24GR300 = "..\\ScanLogPanasonicGR300\\24GR300";
         static string DirectoriTwo32GR300 = "..\\ScanLogPanasonicGR300\\32GR300";
@@ -62,6 +54,9 @@ namespace ScanLogPanasonicGR300
             private static extern int SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
 
             [DllImport("user32.dll")]
+            static extern IntPtr SetFocus(IntPtr hWnd);
+
+            [DllImport("user32.dll")]
             public static extern IntPtr GetForegroundWindow();
             [DllImport("user32.dll", CharSet = CharSet.Auto)]
             public static extern bool PostMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
@@ -76,17 +71,17 @@ namespace ScanLogPanasonicGR300
         public Form1()
         {
             this.SetStyle(ControlStyles.Selectable, false);
-            //Connect_Minolta();
-            //Disconnect_CA210();
 
-                ///ищем окно по имени и классу
+            #region search windows/elements
+                /// ищем окно по имени и классу
                 IntPtr ktcTV = FindWindowEx(IntPtr.Zero, IntPtr.Zero, "WindowsForms10.Window.8.app.0.141b42a_r6_ad1", "KTC TV WBAA Tool V19 (2019.5)");
                 /// ищем в окне поле для ввода password Administrator
                 IntPtr fieldEnrty = FindWindowEx(ktcTV, IntPtr.Zero, "WindowsForms10.RichEdit20W.app.0.141b42a_r6_ad1", "");
                 /// ищем в окне кнопку класса Button с подписью Lock
                 IntPtr buttonUnlock = FindWindowEx(ktcTV, IntPtr.Zero, "WindowsForms10.BUTTON.app.0.141b42a_r6_ad1", "Lock");
+            #endregion
 
-                TopMost = true;
+            TopMost = true;
                 PostMessage(GetForegroundWindow(), 0x50, 1, LoadKeyboardLayout("00000409", 1));///English install
 
                 //Send path and it returned name Directory where be this exe-file   
@@ -143,7 +138,32 @@ namespace ScanLogPanasonicGR300
                 textBox1.ReadOnly = true;
                 textBox1.MaxLength = 999999999;
                 textBox2.Select();
-       
+
+            //this.FormClosed += new FormClosedEventHandler(Form1_FormClosed);
+            //MouseHook.MouseDown += new MouseEventHandler(MouseHook_MousePress);
+            //MouseHook.LocalHook = false;
+
+            //MouseHook.InstallHook();
+
+        }
+
+        public void MouseHook_MousePress(object sender, MouseEventArgs e)
+        {
+            //KeyboardSend.KeyDown(Keys.Alt);
+            //Thread.Sleep(500);
+            //KeyboardSend.KeyDown(Keys.Tab);
+            //Thread.Sleep(500);
+            //KeyboardSend.KeyUp(Keys.Tab);
+            //Thread.Sleep(500);
+            //KeyboardSend.KeyUp(Keys.Alt);
+
+            //SendKeys.Send("%");
+            //Thread.Sleep(1000);
+            //SendKeys.Send("%{Tab}");
+
+            //this.Activate();
+            //this.textBox2.Select();
+            //this.textBox2.Text += "|.";
         }
 
         ///Hotkey
@@ -194,16 +214,16 @@ namespace ScanLogPanasonicGR300
                 {
                     //InputSimulator inputS = new InputSimulator();
                     //Thread.Sleep(500);
-                    SetForegroundWindow(ktcTV);
-                    Thread.Sleep(300);
-                    SetForegroundWindow(buttonStart);
-                    Thread.Sleep(300);
-                    SendKeys.Send("{ENTER}");
+                    //SetForegroundWindow(ktcTV);
+                    //Thread.Sleep(300);
+                    //SetForegroundWindow(buttonStart);
+                    //Thread.Sleep(300);
+                    //SendKeys.Send("{ENTER}");
                     //PostMessage(NMWnd, WM_KEYDOWN, VK_SPACE, 0);
                     //PostMessage(NMWnd, WM_KEYUP, VK_SPACE, 0);
                     //inputS.Keyboard.KeyPress(VirtualKeyCode.NUMPAD0);
-                    Thread.Sleep(500);
-                    SetForegroundWindow(ScanLog);
+                        //Thread.Sleep(500);
+                        //SetForegroundWindow(ScanLog);
                 }
                 ///else { MessageBox.Show("Network Machine не найдена!"); }
             }
@@ -260,7 +280,76 @@ namespace ScanLogPanasonicGR300
             }
         }
 
+    
 
+        private void Form1_Activated(object sender, EventArgs e) {
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //this.Deactivate += new EventHandler(Form1_Deactivate);
+        }
+
+        private void Form1_Deactivate(object sender, EventArgs e)
+        {
+            /// search ScanLogPanasonicGR300 window
+            //IntPtr ScanLogPanasonicGR300 = FindWindowEx(IntPtr.Zero, IntPtr.Zero, "WindowsForms10.Window.8.app.0.141b42a_r6_ad1", "ScanLog");
+            
+            //SetForegroundWindow(ScanLogPanasonicGR300);
+            Thread.Sleep(500);
+            SendKeys.Send("%");
+            Thread.Sleep(1000);
+            SendKeys.Send("%{Tab}");
+
+            //TopMost = !TopMost;
+            //this.Show();
+            //this.Activate();
+            //this.textBox2.Select();
+        }
+
+        //private void s_PreviewMouseUp(object sender, MouseEventArgs mea = (MouseEventArgs) e)
+        //{
        
+        //    if (e.LeftButton == MouseButtonState.Released)
+        //        isSelect = false;
+        //}
+
+        private void Form1_MouseLeave(object sender, EventArgs e)
+        {
+            //IntPtr ScanLogPanasonicGR300 = FindWindowEx(IntPtr.Zero, IntPtr.Zero, "WindowsForms10.Window.8.app.0.141b42a_r6_ad1", "ScanLog");
+
+            //SetFocus(ScanLogPanasonicGR300);
+            //MessageBox.Show("Вернуться");
+            //this.Show();
+            //this.Activate();
+            
+            //Select();
+            ////this.textBox2.Select();
+            ////textBox2.Text += "z";
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //MouseHook.UnInstallHook();
+        }
     }
+    //static class KeyboardSend
+    //{
+    //    [DllImport("user32.dll")]
+    //    private static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
+
+    //    private const int KEYEVENTF_EXTENDEDKEY = 1;
+    //    private const int KEYEVENTF_KEYUP = 2;
+
+    //    public static void KeyDown(Keys vKey)
+    //    {
+    //        keybd_event((byte)vKey, 0, KEYEVENTF_EXTENDEDKEY, 0);
+    //    }
+
+    //    public static void KeyUp(Keys vKey)
+    //    {
+    //        keybd_event((byte)vKey, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
+    //    }
+    //}
 }

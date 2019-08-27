@@ -22,7 +22,7 @@ namespace ScanLogPanasonicGR300
 {
     static class Program
     {
-        //propertisForWithBalans
+        //propertis_For_With_Balans
         public static ICas m_ICas;
         public static ICa m_ICa;
         public static IProbe m_IProbe;
@@ -32,7 +32,7 @@ namespace ScanLogPanasonicGR300
         public static int timeAfterAutostart;
 
         /// <summary>
-        /// Главная точка входа для приложения.
+                        /// Главная точка входа для приложения.
         /// </summary>
         [STAThread]
         static void Main()
@@ -40,16 +40,14 @@ namespace ScanLogPanasonicGR300
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Connect_Minolta();
-            Disconnect_CA210();
-            if (isConnectedMinolta)
-            {
+            //Connect_Minolta();
+            //Disconnect_CA210();
+            //if (isConnectedMinolta)
+            //{
 
                 Application.Run(new Form1());
-            }
-            
+            //}
         }
-
 
         #region White Balance
         public static void Connect_Minolta()
@@ -175,7 +173,6 @@ namespace ScanLogPanasonicGR300
                     CalibrateZero("Слишком ярко!");
                 }
             }
-            
         }
 
         public static void Disconnect_CA210()
@@ -193,6 +190,5 @@ namespace ScanLogPanasonicGR300
             catch { }
         }
         #endregion
-
     }
 }
