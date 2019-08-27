@@ -29,7 +29,6 @@ namespace ScanLogPanasonicGR300
         public static IMemory m_IMemory;
         public static ICa200 m_ICa200; //= (ICa200)new Ca200Class();
         public static bool isConnectedMinolta = false;
-        public static int timeAfterAutostart;
 
         /// <summary>
                         /// Главная точка входа для приложения.
@@ -43,10 +42,7 @@ namespace ScanLogPanasonicGR300
             //Connect_Minolta();
             //Disconnect_CA210();
             //if (isConnectedMinolta)
-            //{
-
                 Application.Run(new Form1());
-            //}
         }
 
         #region White Balance

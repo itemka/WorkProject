@@ -19,7 +19,6 @@ using Automation = System.Windows.Automation;
 using CA200SRVRLib;
 using Hooks;
 
-
 namespace ScanLogPanasonicGR300
 {
     public partial class Form1 : Form
@@ -28,50 +27,51 @@ namespace ScanLogPanasonicGR300
         static string DirectoriOne24GR300 = "..\\ScanLogPanasonicGR300\\24GR300";
         static string DirectoriTwo32GR300 = "..\\ScanLogPanasonicGR300\\32GR300";
         static string DirectoriThree43GR300 = "..\\ScanLogPanasonicGR300\\43GR300";
-        static string DirectoriModel = "..\\ScanLogPanasonicGR300\\";
-        //static string DirectoriModel2 = "..\\ScanLogPanasonicGR300";
+        static string DirectoriModel = "..\\ScanLogPanasonicGR300\\";//static string DirectoriModel2 = "..\\ScanLogPanasonicGR300";
         public string PanasoncModel;
         static string FileWhitNameDate = "\\" + DateTime.Now.ToShortDateString() + ".log";
-
         public string pathToFileCreateToday;
+        static bool AutoReturn = false;
+        //Constant for keyboard
+            const int VK_LBUTTON = 0x01;//mous
+            const int VK_RETURN = 0x0D;//enter
+            const int VK_SPACE = 0x20;//spase
+            const int VK_NUMPAD0 = 0x60;//0
+            private const int WM_KEYDOWN = 0x100;
+            private const int WM_KEYUP = 0x0101;
+                #region DLL
+                    [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
+                    public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
-        ///Constant for keyboard
-        const int VK_LBUTTON = 0x01;///mous
-        const int VK_RETURN = 0x0D;///enter
-        const int VK_SPACE = 0x20;///spase
-        const int VK_NUMPAD0 = 0x60;///0
-        private const int WM_KEYDOWN = 0x100;
-        private const int WM_KEYUP = 0x0101;
-            #region DLL
-            [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
-            public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
-            [DllImport("user32.dll", CharSet = CharSet.Auto)]
-            public static extern IntPtr FindWindowEx(IntPtr hwndParent, IntPtr hwndChildAfter, string className, string windowName);
-            [DllImport("user32.dll")]
-            public static extern bool SetForegroundWindow(IntPtr hWnd);
+                    [DllImport("user32.dll", CharSet = CharSet.Auto)]
+                    public static extern IntPtr FindWindowEx(IntPtr hwndParent, IntPtr hwndChildAfter, string className, string windowName);
+
+                    [DllImport("user32.dll")]
+                    public static extern bool SetForegroundWindow(IntPtr hWnd);
         
-            [DllImport("user32.dll", CharSet = CharSet.Auto)]
-            private static extern int SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+                    [DllImport("user32.dll", CharSet = CharSet.Auto)]
+                    private static extern int SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
 
-            [DllImport("user32.dll")]
-            static extern IntPtr SetFocus(IntPtr hWnd);
+                    [DllImport("user32.dll")]
+                    static extern IntPtr SetFocus(IntPtr hWnd);
 
-            [DllImport("user32.dll")]
-            public static extern IntPtr GetForegroundWindow();
-            [DllImport("user32.dll", CharSet = CharSet.Auto)]
-            public static extern bool PostMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-            [DllImport("user32.dll")]
-            static extern int LoadKeyboardLayout(string pwszKLID, uint Flags);
+                    [DllImport("user32.dll")]
+                    public static extern IntPtr GetForegroundWindow();
 
-            [DllImport("user32.dll", SetLastError = true)]
-            public static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, int dwExtraInfo);
-        #endregion
+                    [DllImport("user32.dll", CharSet = CharSet.Auto)]
+                    public static extern bool PostMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+
+                    [DllImport("user32.dll")]
+                    static extern int LoadKeyboardLayout(string pwszKLID, uint Flags);
+
+                    [DllImport("user32.dll", SetLastError = true)]
+                    public static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, int dwExtraInfo);   
+                #endregion
         #endregion
 
         public Form1()
-        {
-            this.SetStyle(ControlStyles.Selectable, false);
-
+        {//this.SetStyle(ControlStyles.Selectable, false);
+            
             #region search windows/elements
                 /// ищем окно по имени и классу
                 IntPtr ktcTV = FindWindowEx(IntPtr.Zero, IntPtr.Zero, "WindowsForms10.Window.8.app.0.141b42a_r6_ad1", "KTC TV WBAA Tool V19 (2019.5)");
@@ -81,8 +81,10 @@ namespace ScanLogPanasonicGR300
                 IntPtr buttonUnlock = FindWindowEx(ktcTV, IntPtr.Zero, "WindowsForms10.BUTTON.app.0.141b42a_r6_ad1", "Lock");
             #endregion
 
+            //first screen
             TopMost = true;
-                PostMessage(GetForegroundWindow(), 0x50, 1, LoadKeyboardLayout("00000409", 1));///English install
+            //English install
+            PostMessage(GetForegroundWindow(), 0x50, 1, LoadKeyboardLayout("00000409", 1));
 
                 //Send path and it returned name Directory where be this exe-file   
                 string ReverseStringAndDelete(string s)
@@ -134,42 +136,22 @@ namespace ScanLogPanasonicGR300
                     //SendKeys.Send("{ENTER}");
                 }
                 InitializeComponent();
-                this.KeyPreview = true;///Для горячих клавиш
+                this.KeyPreview = true;//Для горячих клавиш
                 textBox1.ReadOnly = true;
                 textBox1.MaxLength = 999999999;
                 textBox2.Select();
-
-            //this.FormClosed += new FormClosedEventHandler(Form1_FormClosed);
-            //MouseHook.MouseDown += new MouseEventHandler(MouseHook_MousePress);
-            //MouseHook.LocalHook = false;
-
-            //MouseHook.InstallHook();
-
+            if (AutoReturn)
+            {
+                button1.BackColor = Color.DimGray;
+            }
         }
 
-        public void MouseHook_MousePress(object sender, MouseEventArgs e)
-        {
-            //KeyboardSend.KeyDown(Keys.Alt);
-            //Thread.Sleep(500);
-            //KeyboardSend.KeyDown(Keys.Tab);
-            //Thread.Sleep(500);
-            //KeyboardSend.KeyUp(Keys.Tab);
-            //Thread.Sleep(500);
-            //KeyboardSend.KeyUp(Keys.Alt);
-
-            //SendKeys.Send("%");
-            //Thread.Sleep(1000);
-            //SendKeys.Send("%{Tab}");
-
-            //this.Activate();
-            //this.textBox2.Select();
-            //this.textBox2.Text += "|.";
+        //Hotkey
+        private void Form1_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) { ProcessingDataScan(); }
+            if (e.KeyCode == Keys.F4) { button1.PerformClick(); }
         }
-
-        ///Hotkey
-        private void Form1_KeyDown(object sender, KeyEventArgs e) { if (e.KeyCode == Keys.Enter) { ProcessingDataScan(); } }
-        ///Catalog for scan log
-
+        //Catalog for scan log
         public void DirectoriScanLog_Panasonic()
         {
             ///Create directory if their no
@@ -184,23 +166,21 @@ namespace ScanLogPanasonicGR300
                 //MessageBox.Show(pathToFileCreateToday);
                 File.Create(pathToFileCreateToday);
             }
-
             #region Delete file < sevenDays
-            ///// Delete file < sevenDays
-            //string[] fileNameDate = Directory.GetFiles(DirectoriModel);
-            //if (fileNameDate.Length != 0)
-            //{
-            //    foreach (string item in fileNameDate)
-            //    {
-            //        FileInfo f1 = new FileInfo(item);
-            //        if (f1.LastAccessTime < DateTime.Now.AddDays(-7))
-            //            f1.Delete();
-            //    }
-            //}
+                ///// Delete file < sevenDays
+                //string[] fileNameDate = Directory.GetFiles(DirectoriModel);
+                //if (fileNameDate.Length != 0)
+                //{
+                //    foreach (string item in fileNameDate)
+                //    {
+                //        FileInfo f1 = new FileInfo(item);
+                //        if (f1.LastAccessTime < DateTime.Now.AddDays(-7))
+                //            f1.Delete();
+                //    }
+                //}
             #endregion
         }
-
-        ///Send Space
+        //Send Space
         public void ScanStart()
         {
             try
@@ -229,7 +209,6 @@ namespace ScanLogPanasonicGR300
             }
             catch (Exception ex) { MessageBox.Show("Ошибка:\n" + ex.Message, "ScanLog", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
         }
-
         public void ProcessingDataScan()
         {
             textBox2.Text = textBox2.Text.Replace(" ", string.Empty);
@@ -242,19 +221,16 @@ namespace ScanLogPanasonicGR300
             textBox2.Text = "";
             //textBox2.Select();
         }
-
         private void открытьПапкуСВыбраннойМодельюToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try { Process.Start(@DirectoriModel + PanasoncModel); }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
-
         private void открытьФайлСозданныйСегодняToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (File.Exists(pathToFileCreateToday))
                 Process.Start(pathToFileCreateToday);
         }
-
         private void поискСканаВВСегоднешнемФайлеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (File.Exists(pathToFileCreateToday))
@@ -280,76 +256,39 @@ namespace ScanLogPanasonicGR300
             }
         }
 
-    
-
-        private void Form1_Activated(object sender, EventArgs e) {
-            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //this.Deactivate += new EventHandler(Form1_Deactivate);
-        }
 
         private void Form1_Deactivate(object sender, EventArgs e)
         {
-            /// search ScanLogPanasonicGR300 window
-            //IntPtr ScanLogPanasonicGR300 = FindWindowEx(IntPtr.Zero, IntPtr.Zero, "WindowsForms10.Window.8.app.0.141b42a_r6_ad1", "ScanLog");
-            
-            //SetForegroundWindow(ScanLogPanasonicGR300);
-            Thread.Sleep(500);
-            SendKeys.Send("%");
-            Thread.Sleep(1000);
-            SendKeys.Send("%{Tab}");
-
-            //TopMost = !TopMost;
-            //this.Show();
-            //this.Activate();
-            //this.textBox2.Select();
+            try
+            {
+                if (AutoReturn)
+                {
+                    Thread.Sleep(500);
+                    SendKeys.Send("%");
+                    Thread.Sleep(500);
+                    SendKeys.Send("%{Tab}");
+                }
+            }
+            catch (Exception ex) { MessageBox.Show("Ошибка:\n" + ex.Message, "ScanLog", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
         }
-
-        //private void s_PreviewMouseUp(object sender, MouseEventArgs mea = (MouseEventArgs) e)
-        //{
-       
-        //    if (e.LeftButton == MouseButtonState.Released)
-        //        isSelect = false;
-        //}
-
-        private void Form1_MouseLeave(object sender, EventArgs e)
+        public static int z = 0;
+        private void button1_Click(object sender, EventArgs e)
         {
-            //IntPtr ScanLogPanasonicGR300 = FindWindowEx(IntPtr.Zero, IntPtr.Zero, "WindowsForms10.Window.8.app.0.141b42a_r6_ad1", "ScanLog");
-
-            //SetFocus(ScanLogPanasonicGR300);
-            //MessageBox.Show("Вернуться");
-            //this.Show();
-            //this.Activate();
-            
-            //Select();
-            ////this.textBox2.Select();
-            ////textBox2.Text += "z";
-        }
-
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //MouseHook.UnInstallHook();
+            try
+            {
+                AutoReturn = !AutoReturn;
+                z++;
+                button1.BackColor = Color.Green;
+                if (z%2 != 0)
+                {
+                    
+                }
+                else
+                {
+                    button1.BackColor = Color.DimGray;
+                }
+            }
+            catch (Exception ex) { MessageBox.Show("Ошибка:\n" + ex.Message, "ScanLog", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
         }
     }
-    //static class KeyboardSend
-    //{
-    //    [DllImport("user32.dll")]
-    //    private static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
-
-    //    private const int KEYEVENTF_EXTENDEDKEY = 1;
-    //    private const int KEYEVENTF_KEYUP = 2;
-
-    //    public static void KeyDown(Keys vKey)
-    //    {
-    //        keybd_event((byte)vKey, 0, KEYEVENTF_EXTENDEDKEY, 0);
-    //    }
-
-    //    public static void KeyUp(Keys vKey)
-    //    {
-    //        keybd_event((byte)vKey, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
-    //    }
-    //}
 }
