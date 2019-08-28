@@ -263,10 +263,8 @@ namespace ScanLogPanasonicGR300
             {
                 if (AutoReturn)
                 {
-                    Thread.Sleep(500);
-                    SendKeys.Send("%");
-                    Thread.Sleep(500);
-                    SendKeys.Send("%{Tab}");
+                    Thread.Sleep(500); SendKeys.Send("%");
+                    Thread.Sleep(500); SendKeys.Send("%{Tab}");
                 }
             }
             catch (Exception ex) { MessageBox.Show("Ошибка:\n" + ex.Message, "ScanLog", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
@@ -278,15 +276,8 @@ namespace ScanLogPanasonicGR300
             {
                 AutoReturn = !AutoReturn;
                 z++;
-                button1.BackColor = Color.Green;
-                if (z%2 != 0)
-                {
-                    
-                }
-                else
-                {
-                    button1.BackColor = Color.DimGray;
-                }
+                if (z%2 != 0) button1.BackColor = Color.Lime;
+                else button1.BackColor = Color.FromArgb(224, 224, 224);
             }
             catch (Exception ex) { MessageBox.Show("Ошибка:\n" + ex.Message, "ScanLog", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
         }

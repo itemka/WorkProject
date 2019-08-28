@@ -39,10 +39,9 @@ namespace ScanLogPanasonicGR300
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Connect_Minolta();
-            //Disconnect_CA210();
-            //if (isConnectedMinolta)
-                Application.Run(new Form1());
+            Connect_Minolta();
+            Disconnect_CA210();
+            if (isConnectedMinolta) Application.Run(new Form1());
         }
 
         #region White Balance
