@@ -26,7 +26,7 @@ namespace RedRat3
 {
     static class Program
     {
-        /// Главная точка входа для приложения.
+        // Главная точка входа для приложения.
         [STAThread]
         static void Main()
         {
@@ -38,7 +38,7 @@ namespace RedRat3
         }
     }
 
-    /// Использование dll из ресурса
+    // Использование dll из ресурса
     public static class Resolver
     {
         private static volatile bool _loaded;

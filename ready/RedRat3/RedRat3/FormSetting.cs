@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace RedRat3
 {
-    /// Форма настроек(установка переодичности вывода сигнала)
+    // Форма настроек(установка переодичности вывода сигнала)
     public partial class FormSetting : Form
     {
         public string text;
@@ -19,7 +19,7 @@ namespace RedRat3
             textBox1.Text = "700";
         }
 
-        /// Кнопка установки переодичности вывода сигнала
+        // Кнопка установки переодичности вывода сигнала
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "" || textBox1.Text == "0")
@@ -34,20 +34,16 @@ namespace RedRat3
             }
         }
 
-        /// Событие(ввод только цифр), которое происходит при фокусировке textBox1
+        // Событие(ввод только цифр), которое происходит при фокусировке textBox1
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != Convert.ToChar(8))
-            {
-                e.Handled = true;
-            }
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != Convert.ToChar(8)) { e.Handled = true; }
         }
 
-        /// Событие для горячих клавиш
+        // Событие для горячих клавиш
         private void FormSetting_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-                button1.PerformClick();
+            if (e.KeyCode == Keys.Enter) button1.PerformClick();
         }
 
         //Кнопка сохранения драйверов

@@ -1,23 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
 
 namespace RedRat3
 {
-    /// Форма Таймер захвата
+    // Форма Таймер захвата
     public partial class FormTimerCapture : Form
     {
         int time;
         string msgFormTimerCapture;
 
-        /// Сама форма, с добавлением полей в метод
+        // Сама форма, с добавлением полей в метод
         public FormTimerCapture(int _time, string _msgFormTimerCapture)
         {
             InitializeComponent();
@@ -30,7 +22,7 @@ namespace RedRat3
             }
         }
 
-        /// Таймер захвата
+        // Таймер захвата
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (time < 0)

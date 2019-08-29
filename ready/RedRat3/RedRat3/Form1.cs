@@ -1,33 +1,16 @@
 ﻿using System;
+using RedRat.IR;
 using System.IO;
-using System.Xml;
-using System.Linq;
-using System.Text;
-using System.Timers;
+using RedRat.RedRat3;
 using System.Drawing;
-using System.IO.Ports;
-using System.IO.Compression;
-using System.Threading;
-using System.Resources;
-using System.Reflection;
 using System.Windows.Forms;
 using System.Threading.Tasks;
-using System.Xml.Serialization;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-
-using RedRat;
-using RedRat.IR;
-using RedRat.USB;
-using RedRat.Util;
-using RedRat.RedRat3;
-using RedRat.RedRat3.USB;
-using RedRat.AVDeviceMngmt;
 
 namespace RedRat3
 {
-    /// Главная форма
-    /// Для добавления любого файла в проект ПРАВИЛЬНО - Обозреватель решений -> Resources.resx -> Добавить ресурс -> Добавить существующий файл...
+    // Главная форма
+    // Для добавления любого файла в проект ПРАВИЛЬНО: ->
+    // Обозреватель решений -> Resources.resx -> Добавить ресурс -> Добавить существующий файл...
     public partial class Form1 : Form
     {
         public static string path1 = "C:\\RedRat3_Data\\";
@@ -41,17 +24,14 @@ namespace RedRat3
             button3.Enabled = false;
                 button3.BackColor = Color.DimGray;
 
-            while (!Directory.Exists(path1))
-            {
-                Directory.CreateDirectory(path1);
-            }
+            while (!Directory.Exists(path1)) { Directory.CreateDirectory(path1); }
         }
 
         public IRedRat3 RedRat3;
         public IRPacket OutputIR;
         public int interVal;
         
-        /// Событие для горячих клавиш
+        // Событие для горячих клавиш
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             try
@@ -75,7 +55,7 @@ namespace RedRat3
             }  
         }
 
-        /// Кнопка поиска RedRat3(F1)
+        // Кнопка поиска RedRat3(F1)
         private void поискRedRat3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -89,7 +69,7 @@ namespace RedRat3
             }
         }
 
-        /// Кнопка Настройки(F2)
+        // Кнопка Настройки(F2)
         private void settingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -104,7 +84,7 @@ namespace RedRat3
             }
         }
 
-        /// Кнопка Выбрать сигнал(F3)
+        // Кнопка Выбрать сигнал(F3)
         private void выбратьСигналF3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -132,7 +112,7 @@ namespace RedRat3
             }
         }
 
-        /// Кнопка захвата сигнала
+        // Кнопка захвата сигнала
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -165,7 +145,7 @@ namespace RedRat3
             }
         }
 
-        /// Кнопка вывода сигнала
+        // Кнопка вывода сигнала
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -186,7 +166,7 @@ namespace RedRat3
             }
         }
 
-        /// Кнопка вывода сигнала по таймеру
+        // Кнопка вывода сигнала по таймеру
         private void button3_Click(object sender, EventArgs e)
         {
             try

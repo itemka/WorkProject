@@ -1,39 +1,18 @@
 ﻿using System;
-using System.IO;
-using System.Xml;
-using System.Linq;
-using System.Text;
-using System.Timers;
-using System.Drawing;
-using System.IO.Ports;
-using System.Threading;
-using System.Reflection;
-using System.Windows.Forms;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-
-using RedRat;
-using RedRat.IR;
 using RedRat.USB;
-using RedRat.Util;
+using System.Text;
 using RedRat.RedRat3;
 using RedRat.RedRat3.USB;
-using RedRat.AVDeviceMngmt;
+using System.Windows.Forms;
 
 namespace RedRat3
 {
-    /// <summary>
-    /// Поиск RedRat
-    /// </summary>
+    // Поиск RedRat
     public class SearchRedRat
     {
         public IRedRat3 RedRat3;
 
-        /// <summary>
-        /// Просто находит первый RedRat3, подключенный к этому компьютеру.
-        /// </summary>
+        // Просто находит первый RedRat3, подключенный к этому компьютеру.
         public IRedRat3 FindRedRat()
         {
             try
@@ -58,9 +37,7 @@ namespace RedRat3
             return RedRat3;
         }
 
-        /// <summary>
-        /// Просто находит первый RedRat3, подключенный к этому компьютеру. + выводит информацию
-        /// </summary>
+        // Просто находит первый RedRat3, подключенный к этому компьютеру. + выводит информацию
         public IRedRat3 FindRedRatInfo()
         {
             try

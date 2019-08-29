@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RedRat3
@@ -27,11 +20,10 @@ namespace RedRat3
             Close();
         }
 
-        /// Событие для горячих клавиш
+        // Событие для горячих клавиш
         private void inputName_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-                button1.PerformClick();
+            if (e.KeyCode == Keys.Enter) button1.PerformClick();
         }
     }
 }
