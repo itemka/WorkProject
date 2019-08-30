@@ -10,7 +10,7 @@ namespace RedRat3
 {
     // Главная форма
     // Для добавления любого файла в проект ПРАВИЛЬНО: ->
-    // Обозреватель решений -> Resources.resx -> Добавить ресурс -> Добавить существующий файл...
+    // Обозреватель решений -> Properties -> Resources.resx -> Добавить ресурс -> Добавить существующий файл...
     public partial class Form1 : Form
     {
         public static string path1 = "C:\\RedRat3_Data\\";

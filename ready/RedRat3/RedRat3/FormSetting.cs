@@ -7,7 +7,6 @@ namespace RedRat3
     // Форма настроек(установка переодичности вывода сигнала)
     public partial class FormSetting : Form
     {
-        public string text;
         private int mili_second;
         public int ms { get { return mili_second; } set { mili_second = value; } }
 
@@ -16,20 +15,19 @@ namespace RedRat3
             this.KeyPreview = true;
             InitializeComponent();
             textBox1.Select();
-            textBox1.Text = "700";
+            textBox1.Text = "";
         }
 
         // Кнопка установки переодичности вывода сигнала
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || textBox1.Text == "0")
+            if (textBox1.Text == "" || textBox1.Text == " " || textBox1.Text == "0")
             {
                 MessageBox.Show("Введите итервал(ms) в настройках.");
             }
             else
             {
-                text = textBox1.Text;
-                mili_second = Convert.ToInt32(text);
+                mili_second = Convert.ToInt32(textBox1.Text);
                 Close();
             }
         }
