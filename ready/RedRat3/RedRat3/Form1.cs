@@ -48,6 +48,8 @@ namespace RedRat3
                     button2.PerformClick();
                 if (e.KeyCode == Keys.F7)
                     button3.PerformClick();
+                if (e.KeyCode == Keys.F8)
+                    button4.PerformClick();
             }
             catch (Exception ex)
             {
@@ -192,6 +194,13 @@ namespace RedRat3
             {
                 MessageBox.Show(ex.Message);
             }
-        } 
+        }
+
+        // Кнопка вызова пульта
+        private void button4_Click(object sender, EventArgs e)
+        {
+            RemoteController RC = new RemoteController();
+            RC.ShowDialog();
+        }
     }
 }

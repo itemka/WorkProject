@@ -104,6 +104,12 @@
     <Compile Include="IRsignalTrainingMode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoteController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteController.Designer.cs">
+      <DependentUpon>RemoteController.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchRedRat.cs" />
     <Compile Include="SignalOutput.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -131,6 +137,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RemoteController.resx">
+      <DependentUpon>RemoteController.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,13 +149,68 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\drivers.rar" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="RedRat.dll" />
+    <None Include="Resources\Драйвера_для_RedRat3.zip" />
+    <None Include="Resources\Ресурс 1.png" />
+    <None Include="Resources\Ресурс 3.png" />
+    <None Include="Resources\Ресурс 2.png" />
+    <None Include="Resources\Ресурс 4.png" />
+    <None Include="Resources\Ресурс 5.png" />
+    <None Include="Resources\Ресурс 6.png" />
+    <None Include="Resources\Ресурс 14.png" />
+    <None Include="Resources\Ресурс 15.png" />
+    <None Include="Resources\Ресурс 16.png" />
+    <None Include="Resources\Ресурс 17.png" />
+    <None Include="Resources\Ресурс 18.png" />
+    <None Include="Resources\Ресурс 19.png" />
+    <None Include="Resources\Ресурс 20.png" />
+    <None Include="Resources\Ресурс 21.png" />
+    <None Include="Resources\Ресурс 22.png" />
+    <None Include="Resources\Ресурс 23.png" />
+    <None Include="Resources\Ресурс 24.png" />
+    <None Include="Resources\Ресурс 25.png" />
+    <None Include="Resources\Ресурс 26.png" />
+    <None Include="Resources\Ресурс 27.png" />
+    <None Include="Resources\Ресурс 28.png" />
+    <None Include="Resources\Ресурс 29.png" />
+    <None Include="Resources\Ресурс 30.png" />
+    <None Include="Resources\Ресурс 31.png" />
+    <None Include="Resources\Ресурс 32.png" />
+    <None Include="Resources\Ресурс 33.png" />
+    <None Include="Resources\Ресурс 34.png" />
+    <None Include="Resources\Ресурс 35.png" />
+    <None Include="Resources\Ресурс 36.png" />
+    <None Include="Resources\Ресурс 37.png" />
+    <None Include="Resources\Ресурс 38.png" />
+    <None Include="Resources\Ресурс 39.png" />
+    <None Include="Resources\Ресурс 40.png" />
+    <None Include="Resources\Ресурс 41.png" />
+    <None Include="Resources\Ресурс 42.png" />
+    <None Include="Resources\Ресурс 43.png" />
+    <None Include="Resources\Ресурс 44.png" />
+    <None Include="Resources\Ресурс 45.png" />
+    <None Include="Resources\Ресурс 46.png" />
+    <None Include="Resources\Ресурс 47.png" />
+    <None Include="Resources\Ресурс 48.png" />
+    <None Include="Resources\Ресурс 49.png" />
+    <None Include="Resources\Ресурс 50.png" />
+    <None Include="Resources\Ресурс 51.png" />
+    <None Include="Resources\Ресурс 52.png" />
+    <None Include="Resources\Ресурс 53.png" />
+    <None Include="Resources\Ресурс 54.png" />
+    <None Include="Resources\Ресурс 55.png" />
+    <None Include="Resources\Ресурс 56.png" />
+    <None Include="Resources\Ресурс 57.png" />
+    <None Include="Resources\Ресурс 58.png" />
+    <None Include="Resources\Ресурс 59.png" />
+    <None Include="Resources\Ресурс 60.png" />
+    <None Include="Resources\Ресурс 61.png" />
+    <None Include="Resources\Ресурс 62.png" />
     <Content Include="RR-Small.ico" />
   </ItemGroup>
   <ItemGroup>

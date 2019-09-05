@@ -45,3 +45,4 @@ d:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.CoreCompileInputs.
 d:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.csproj.CopyComplete
 d:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.exe
 d:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.pdb
+D:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.RemoteController.resources

@@ -49,7 +49,7 @@ namespace RedRat3
         {
             try
             {
-                File.WriteAllBytes(Form1.path1 + "drivers.rar", Properties.Resources.drivers);
+                File.WriteAllBytes(Form1.path1 + "Драйвера_для_RedRat3.zip", Properties.Resources.Драйвера_для_RedRat3);
                 MessageBox.Show("Драйвера выгружены успешно.");
             }
             catch (Exception ex)

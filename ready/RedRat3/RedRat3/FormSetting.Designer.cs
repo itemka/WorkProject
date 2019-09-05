@@ -76,9 +76,10 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(12, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 40);
+            this.label2.Size = new System.Drawing.Size(353, 40);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Выгрузка драйверов для RedRat3 в\r\nпапку: С:\\RedRat3_Data\\drivers.rar";
+            this.label2.Text = "Выгрузка драйверов для RedRat3 в папку:\r\nС:\\RedRat3_Data\\Драйвера_для_RedRat3.zip" +
+    "";
             // 
             // button2
             // 
@@ -100,7 +101,7 @@
             this.label3.Location = new System.Drawing.Point(16, 66);
             this.label3.MaximumSize = new System.Drawing.Size(0, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(576, 2);
+            this.label3.Size = new System.Drawing.Size(0, 2);
             this.label3.TabIndex = 5;
             // 
             // FormSetting

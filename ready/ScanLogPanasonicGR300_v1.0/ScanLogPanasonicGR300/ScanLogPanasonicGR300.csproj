@@ -7,7 +7,7 @@
     <ProjectGuid>{CF346DF3-254B-407D-9B68-45F00D5B2BAD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ScanLogPanasonicGR300</RootNamespace>
-    <AssemblyName>ScanLogPanasonicGR300</AssemblyName>
+    <AssemblyName>ScanLogPanasonicGR300_v1.0</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
