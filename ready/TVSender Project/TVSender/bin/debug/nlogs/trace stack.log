@@ -1,8 +1,16 @@
-14:15:37:658 |Info| Ошибка=Порт 'COM6' не существует.   |thread 1| Form1.Form1_Shown => Code.OpenPorts => Code.OpenRestart 163
-14:15:37:658 |Debug| Start: COM6 False   |thread 1| Code.ComRestart => Code.ComRestart => DeviceManagerApi.ToogleComPortDevice 59
-14:15:38:577 |Error| throw Порт COM6 отсутствует в диспетчере устройств.   |thread 1| DeviceManagerApi.ToogleComPortDevice => Ex.Throw => Ex.ErrorStack 267
-14:15:38:599 |Error| COM6: Порт COM6 отсутствует в диспетчере устройств.   |thread 1| Code.OpenRestart => Code.ComRestart => Code.ComRestart 141
-14:15:38:628 |Debug| isAutoStart = False   |thread 1| Control.InvokeMarshaledCallbackHelper => Form.OnShown => Form1.Form1_Shown 1289
-14:15:40:534 |Trace| Значение не может быть неопределенным.
+16:22:13:881 |Info| Дубликат! checks=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.<FillUserOperations>b__41_0 => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:13:940 |Info| Дубликат! CI=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:13:940 |Info| Дубликат! keyson=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:13:940 |Info| Дубликат! keysoff=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:13:957 |Info| Дубликат! ledon=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:13:957 |Info| Дубликат! ledoff=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:13:957 |Info| Дубликат! sw=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:13:982 |Info| Дубликат! checks=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:13:990 |Info| Дубликат! atv=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:13:990 |Info| Дубликат! dtv=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:14:003 |Info| Дубликат! dvbc=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:14:003 |Info| Дубликат! dvbt=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:14:028 |Info| Дубликат! checks=Элемент с тем же ключом уже был добавлен.   |thread 1| Form1.FilesForUserCreation => Form1.FilesForUserCreation => Form1.AddCreatedOperation 758
+16:22:32:999 |Trace| Значение не может быть неопределенным.
 Имя параметра: path   |thread 1| FormScaner.MoveFiles => Ex.Try => Ex.Try 64
-14:15:59:561 |Trace| ClosePorts()   |thread 1| Form.OnFormClosing => Form1.Form1_FormClosing => Code.ClosePorts 92
+16:22:32:999 |Trace| ClosePorts()   |thread 1| Form.OnFormClosing => Form1.Form1_FormClosing => Code.ClosePorts 92

@@ -500,3 +500,30 @@ E:\Все с  TVSender\TVSender Project\TVSender\obj\Debug\TVSender.csproj.Gener
 E:\Все с  TVSender\TVSender Project\TVSender\obj\Debug\TVSender.csproj.CoreCompileInputs.cache
 E:\Все с  TVSender\TVSender Project\TVSender\obj\Debug\TVSender.exe
 E:\Все с  TVSender\TVSender Project\TVSender\obj\Debug\TVSender.pdb
+D:\WorkProject\ready\TVSender Project\TVSender\bin\Debug\Resources\COM_Registration_Tool.exe
+D:\WorkProject\ready\TVSender Project\TVSender\bin\Debug\NLog.config
+D:\WorkProject\ready\TVSender Project\TVSender\bin\Debug\TVSender.exe.config
+D:\WorkProject\ready\TVSender Project\TVSender\bin\Debug\TVSender.exe
+D:\WorkProject\ready\TVSender Project\TVSender\bin\Debug\TVSender.pdb
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.csprojAssemblyReference.cache
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.FormsSmall.FormTextLine.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.FormTimer.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.AskForm.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.ColorBoard.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.WhiteBalanceChroma.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.WhiteBalanceMinolta.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.EnterForm.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.Form1.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.FormAboutDialog.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\SoundCatcher.FormConsole.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.FormNewChoice.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.FormScaner.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.KeyForm.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.OptionsForm1.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.Properties.Resources.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.AskSoundForm.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.OptionsSelectForm.resources
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.csproj.GenerateResource.cache
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.csproj.CoreCompileInputs.cache
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.exe
+D:\WorkProject\ready\TVSender Project\TVSender\obj\Debug\TVSender.pdb

@@ -29,7 +29,7 @@ namespace TVSender
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNewChoice) );
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNewChoice));
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -44,11 +44,14 @@ namespace TVSender
             this.íàñòğîéêèToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ïğîâîäíèêF5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ñïğàâêàToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.Panel2.SuspendLayout();
             this.splitContainer4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
@@ -125,8 +128,9 @@ namespace TVSender
             // listView1
             // 
             this.listView1.Alignment = System.Windows.Forms.ListViewAlignment.Left;
+            this.listView1.BackgroundImageTiled = true;
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( (byte)(204) ));
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listView1.HideSelection = false;
             this.listView1.LargeImageList = this.imageList;
             this.listView1.Location = new System.Drawing.Point(0, 0);
@@ -143,7 +147,7 @@ namespace TVSender
             // 
             // imageList
             // 
-            this.imageList.ImageStream = ( (System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream") ));
+            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
             this.imageList.TransparentColor = System.Drawing.Color.Magenta;
             this.imageList.Images.SetKeyName(0, "FolderClosed.bmp");
             this.imageList.Images.SetKeyName(1, "FolderOpen.bmp");
@@ -177,19 +181,19 @@ namespace TVSender
             this.newFolderToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(129, 48);
+            this.contextMenuStrip.Size = new System.Drawing.Size(135, 48);
             // 
             // newFolderToolStripMenuItem
             // 
             this.newFolderToolStripMenuItem.Name = "newFolderToolStripMenuItem";
-            this.newFolderToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.newFolderToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.newFolderToolStripMenuItem.Text = "New Folder";
             this.newFolderToolStripMenuItem.Click += new System.EventHandler(this.NewFolder);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.DeleteFolder);
             // 
@@ -210,7 +214,7 @@ namespace TVSender
             // 
             this.íàñòğîéêèToolStripMenuItem.Name = "íàñòğîéêèToolStripMenuItem";
             this.íàñòğîéêèToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.íàñòğîéêèToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
+            this.íàñòğîéêèToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
             this.íàñòğîéêèToolStripMenuItem.Text = "Íàñòğîéêè (F2)";
             this.íàñòğîéêèToolStripMenuItem.Click += new System.EventHandler(this.íàñòğîéêèToolStripMenuItem_Click);
             // 
@@ -218,7 +222,7 @@ namespace TVSender
             // 
             this.ïğîâîäíèêF5ToolStripMenuItem.Name = "ïğîâîäíèêF5ToolStripMenuItem";
             this.ïğîâîäíèêF5ToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ïğîâîäíèêF5ToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.ïğîâîäíèêF5ToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
             this.ïğîâîäíèêF5ToolStripMenuItem.Text = "Ïğîâîäíèê (F5)";
             this.ïğîâîäíèêF5ToolStripMenuItem.Click += new System.EventHandler(this.ïğîâîäíèêF5ToolStripMenuItem_Click);
             // 
@@ -226,7 +230,7 @@ namespace TVSender
             // 
             this.ñïğàâêàToolStripMenuItem.Name = "ñïğàâêàToolStripMenuItem";
             this.ñïğàâêàToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ñïğàâêàToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.ñïğàâêàToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.ñïğàâêàToolStripMenuItem.Text = "Ñïğàâêà (F10)";
             this.ñïğàâêàToolStripMenuItem.Click += new System.EventHandler(this.ñïğàâêàToolStripMenuItem_Click);
             // 
@@ -237,10 +241,7 @@ namespace TVSender
             this.ClientSize = new System.Drawing.Size(402, 374);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.splitContainer4);
-            //this.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::TVSender.Properties.Settings.Default, "FormLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged) );
-            //this.Location = global::TVSender.Properties.Settings.Default.FormLocation;
-            //this.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::TVSender.Properties.Settings.Default, "FormLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged) );
-            this.Location = new System.Drawing.Point(new SavingManager().Key(Setting.FormLocationX).ValueInt, new SavingManager().Key(Setting.FormLocationY).ValueInt);
+            this.Location = new System.Drawing.Point(136, 244);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormNewChoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -248,12 +249,15 @@ namespace TVSender
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindow_FormClosing);
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.splitContainer4.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
             this.splitContainer4.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
             this.contextMenuStrip.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);

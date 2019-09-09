@@ -35,7 +35,6 @@ d:\WorkProject\ready\RedRat3\RedRat3\bin\Debug\RedRat3.pdb
 d:\WorkProject\ready\RedRat3\RedRat3\bin\Debug\RedRat.dll
 d:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.csprojAssemblyReference.cache
 d:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.Form1.resources
-d:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.FormSetting.resources
 d:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.FormTimerCapture.resources
 d:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.FormTimerOutputIRsignal.resources
 d:\WorkProject\ready\RedRat3\RedRat3\obj\Debug\RedRat3.inputName.resources

@@ -1,8 +1,16 @@
-14:15:37:658 |Info| thread 1| TVSender.Code.OpenRestart |163  Ошибка=Порт 'COM6' не существует.
-14:15:37:658 |Debug| thread 1| DisableDevice.DeviceManagerApi.ToogleComPortDevice |59  Start: COM6 False
-14:15:38:577 |Error| thread 1|  |267  throw Порт COM6 отсутствует в диспетчере устройств.
-14:15:38:599 |Error| thread 1| TVSender.Code.ComRestart |141  COM6: Порт COM6 отсутствует в диспетчере устройств.
-14:15:38:628 |Debug| thread 1| TVSender.Form1.Form1_Shown |1289  isAutoStart = False
-14:15:40:534 |Trace| thread 1| TVSender.Ex.Try |64  Значение не может быть неопределенным.
+16:22:13:881 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! checks=Элемент с тем же ключом уже был добавлен.
+16:22:13:940 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! CI=Элемент с тем же ключом уже был добавлен.
+16:22:13:940 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! keyson=Элемент с тем же ключом уже был добавлен.
+16:22:13:940 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! keysoff=Элемент с тем же ключом уже был добавлен.
+16:22:13:957 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! ledon=Элемент с тем же ключом уже был добавлен.
+16:22:13:957 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! ledoff=Элемент с тем же ключом уже был добавлен.
+16:22:13:957 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! sw=Элемент с тем же ключом уже был добавлен.
+16:22:13:982 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! checks=Элемент с тем же ключом уже был добавлен.
+16:22:13:990 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! atv=Элемент с тем же ключом уже был добавлен.
+16:22:13:990 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! dtv=Элемент с тем же ключом уже был добавлен.
+16:22:14:003 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! dvbc=Элемент с тем же ключом уже был добавлен.
+16:22:14:003 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! dvbt=Элемент с тем же ключом уже был добавлен.
+16:22:14:028 |Info| thread 1| TVSender.Form1.AddCreatedOperation |758  Дубликат! checks=Элемент с тем же ключом уже был добавлен.
+16:22:32:999 |Trace| thread 1| TVSender.Ex.Try |64  Значение не может быть неопределенным.
 Имя параметра: path
-14:15:59:561 |Trace| thread 1| TVSender.Code.ClosePorts |92  ClosePorts()
+16:22:32:999 |Trace| thread 1| TVSender.Code.ClosePorts |92  ClosePorts()

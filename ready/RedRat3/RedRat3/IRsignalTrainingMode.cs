@@ -58,7 +58,7 @@ namespace RedRat3
         public void CaptureSignal(string fileName = "")
         {
             OpenFileDialog OFD = new OpenFileDialog();
-            OFD.InitialDirectory = Form1.path1;
+            OFD.InitialDirectory = Form1.SingleSignal;
             SearchRedRat SRR = new SearchRedRat();
             if (SRR.FindRedRat() != null)
             {
@@ -70,9 +70,8 @@ namespace RedRat3
                 while (!haveSignal) { Thread.Sleep(100); }
                 if (modSignal != null)
                 {
-                    inputName IN = new inputName();
-                    IN.ShowDialog();
-                    RRUtil.SerializePacketToBinary(Form1.path1 + IN.nameSignal, modSignal);//SerializePacketToXML                    
+                    inputName IN = new inputName(); IN.ShowDialog();
+                    RRUtil.SerializePacketToBinary(Form1.SingleSignal + "\\" + IN.nameSignal, modSignal);//SerializePacketToXML                    
                     var m = MessageBox.Show("Файл \"" + IN.nameSignal + "\" сохранен.", "Прием сигнала", MessageBoxButtons.OK);
                 }
                 else
