@@ -206,10 +206,33 @@
     <None Include="Resources\right-black-arrow.png" />
     <None Include="Resources\right_black_arrow_KVT_icon.ico" />
     <None Include="Resources\right_black_arrow_KVT_icon1.ico" />
-    <None Include="Resources\file.png" />
     <None Include="Resources\folder.png" />
     <None Include="Resources\file_oK8_icon.ico" />
     <None Include="Resources\folder_ZFp_icon.ico" />
+    <None Include="Resources\folder.ico" />
+    <None Include="Resources\f.ico" />
+    <None Include="Resources\file.ico" />
+    <None Include="Resources\Folder Open.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\file2.png" />
+    <None Include="Resources\Places-folder-windows-ico1n.png" />
+    <None Include="Resources\f3.png" />
+    <None Include="Resources\Ff4.png" />
+    <None Include="Resources\Mimetypes-inode-directory-icon.png" />
+    <None Include="Resources\x-office-document-icon.png" />
+    <None Include="Resources\Mimetypes-gtk-file-icon.png" />
+    <None Include="Resources\Mimetypes-Blank-Document-icon.png" />
+    <None Include="Resources\Blank-icon.png" />
+    <None Include="Resources\folder5.png" />
+    <None Include="Resources\file5.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\copy_NsH_icon.ico" />
+    <None Include="Resources\copy_32.png" />
+    <None Include="Resources\copy_24.png" />
+    <None Include="Resources\delete_24.png" />
+    <None Include="Resources\folder_30.png" />
+    <None Include="Resources\delete_30.png" />
+    <None Include="Resources\rename_30.png" />
     <Content Include="RR-Small.ico" />
   </ItemGroup>
   <ItemGroup>

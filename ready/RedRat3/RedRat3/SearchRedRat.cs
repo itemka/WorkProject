@@ -37,6 +37,7 @@ namespace RedRat3
             return RedRat3;
         }
 
+
         // Просто находит первый RedRat3, подключенный к этому компьютеру. + выводит информацию
         public IRedRat3 FindRedRatInfo()
         {

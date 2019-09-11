@@ -11,12 +11,12 @@ namespace RedRat3
             this.KeyPreview = true;
         }
 
-        public string nameSignal { get { return name; } set { name = value; } }
-        private string name;
+        public string name { get { return _name; } set { _name = value; } }
+        private string _name;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            name = textBox1.Text;
+            _name = textBox1.Text;
             Close();
         }
 

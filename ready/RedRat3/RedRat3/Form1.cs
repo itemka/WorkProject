@@ -16,9 +16,16 @@ namespace RedRat3
     public partial class Form1 : Form
     {
         public static string RedRat3_Data = "C:\\RedRat3_Data\\";
-        public static string ComplexSignal = "C:\\RedRat3_Data\\ComplexSignal";
-        public static string SingleSignal = "C:\\RedRat3_Data\\SingleSignal";
+        public static string modelsPath = "C:\\RedRat3_Data\\Models";
         public ListViewItem FocusedItem { get; }
+
+        public IRedRat3 RedRat3;
+        public static IRPacket OutputIR;
+        public int interVal;
+        public static string pathClick = modelsPath;
+        public string tempPathForCopyPast;
+        public bool copy = false;
+
 
         public Form1()
         {
@@ -32,24 +39,18 @@ namespace RedRat3
             textBox1.Text = "";
 
             while (!Directory.Exists(RedRat3_Data)) { Directory.CreateDirectory(RedRat3_Data); }
-            while (!Directory.Exists(ComplexSignal)) { Directory.CreateDirectory(ComplexSignal); }
-            while (!Directory.Exists(SingleSignal)) { Directory.CreateDirectory(SingleSignal); }
-
+            while (!Directory.Exists(modelsPath)) { Directory.CreateDirectory(modelsPath); }
 
             listView1.LargeImageList = imageList1;
-            imageList1.Images.Add("Folder", Properties.Resources.folder_ZFp_icon);
-            imageList1.Images.Add("File", Properties.Resources.file_oK8_icon);
-
+            imageList1.Images.Add("Folder", Properties.Resources.folder5);
+            imageList1.Images.Add("File", Properties.Resources.file5);
             listView1.View = View.Details;
-            AddFoldersWithFileFromEnterPath(SingleSignal);
+            AddFoldersWithFileFromEnterPath(modelsPath);
         }
 
-        public IRedRat3 RedRat3;
-        public IRPacket OutputIR;
-        public int interVal;
-        public string pathClick = SingleSignal;
 
-        //Send path and it returned name Directory where be this exe-file   
+        #region ListView
+        // Send path and it returned name Directory where be this exe-file   
         string ReverseStringAndDelete(string s)
         {
             string str = "";
@@ -79,7 +80,7 @@ namespace RedRat3
 
             return new string(rra);
         }
-        //Делаю путь на один переход короче
+        // Делаю путь на один переход назад
         string ShortPath(string s)
         {
             string str = "";
@@ -112,7 +113,7 @@ namespace RedRat3
 
             return new string(rra);
         }
-        //ДОбавляем папки с файлами в ListView
+        // Добавляем папки с файлами в ListView
         public void AddFoldersWithFileFromEnterPath(string path, bool back = false)
         {
             string _path = back == false ? path : ShortPath(path);
@@ -122,19 +123,16 @@ namespace RedRat3
             
             foreach (var item in Directory.GetDirectories(_path))
             {
-                if (item == null) { }
-                else
+                if (item != null)
                 {
                     pathClick = item;
                     string temp = ReverseStringAndDelete(item);
-                    //listView1.Items[0].ImageKey = 
                     listView1.Items.Add(temp, 0);
                 }
             }
             foreach (var item in Directory.GetFiles(_path))
             {
-                if (item == null) { }
-                else
+                if (item != null)
                 {
                     pathClick = item;
                     string temp = ReverseStringAndDelete(item);
@@ -144,46 +142,130 @@ namespace RedRat3
             pathClick = _path;
             label2.Text = pathClick;
         }
-        //Button return back
+        // Button return back
         private void button5_Click(object sender, EventArgs e)
-        {
-            if (pathClick.Length > 34) AddFoldersWithFileFromEnterPath(pathClick, true);
-            else {}
-        }
-        //Event for ItemActivate
+        { if (pathClick.Length > modelsPath.Length) AddFoldersWithFileFromEnterPath(pathClick, true); }
+        // Event for ItemActivate
         private void listView1_ItemActivate(object sender, EventArgs e)
         {
             SignalOutput SO = new SignalOutput();
             string newPath = pathClick + "\\" + listView1.FocusedItem.Text;
-
-            //Checker is folder or file
-            if (File.Exists(newPath))
+            
+            if (File.Exists(newPath))//Checker is folder or file
             {
-                //MessageBox.Show("This is file!");
-                MessageBox.Show("File is choice!");
+                //MessageBox.Show("File is choice!");
                 //Process.Start(pathClick);
-
+                SearchRedRat SR = new SearchRedRat();
+                RedRat3 = SR.FindRedRat();
                 OutputIR = SO.ConvertingBINARYtoIRsignal(newPath);
                 if (OutputIR != null)
                 {
+                    label4.Text = listView1.FocusedItem.Text;
                     button2.Enabled = true;
                     button2.BackColor = Color.FromArgb(247, 98, 1);
                     button3.Enabled = true;
                     button3.BackColor = Color.FromArgb(19, 129, 214);
                 }
-               //Перерисовку доделать
             }
-            else
+            else { AddFoldersWithFileFromEnterPath(newPath, false); }
+        }
+        //below
+        // Кнопка добавления новой папки
+        private void button6_Click(object sender, EventArgs e)
+        {
+            inputName IN = new inputName(); IN.ShowDialog();
+            if (!Directory.Exists(pathClick + "\\" + IN.name)) { Directory.CreateDirectory(pathClick + "\\" + IN.name); }
+            else { MessageBox.Show("Такая папка есть."); }
+            AddFoldersWithFileFromEnterPath(pathClick);
+        }
+        // Кнопка копировать
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (listView1.FocusedItem.Focused)
             {
-                //MessageBox.Show(pathClick);
-                AddFoldersWithFileFromEnterPath(newPath, false);
+                string newPath = pathClick + "\\" + listView1.FocusedItem.Text;
+                tempPathForCopyPast = newPath;
+                if (File.Exists(newPath))
+                { var m1 = MessageBox.Show("Файл: " + newPath + " скопирован.", "Копирование", MessageBoxButtons.OK); }
+                else { var m2 = MessageBox.Show("Папка: " + newPath + " скопирована.", "Копирование", MessageBoxButtons.OK); }
+                copy = true;
             }
         }
+        // Копия папки
+//______________________Доделать
+        // Кнопка вставить
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (copy)
+            {
+                if (File.Exists(tempPathForCopyPast) || Directory.Exists(tempPathForCopyPast))
+                {
+                    string objectName = ReverseStringAndDelete(tempPathForCopyPast);
+                    if (File.Exists(tempPathForCopyPast))
+                    {
+                        FileInfo fileInfo = new FileInfo(tempPathForCopyPast);
+                        fileInfo.CopyTo(pathClick + "\\" + objectName, true);
+                        AddFoldersWithFileFromEnterPath(pathClick);
+                    }
+                    else
+                    {
+//______________________Доделать
+                        Directory.Move(tempPathForCopyPast, pathClick + "\\" + objectName);
+                        AddFoldersWithFileFromEnterPath(pathClick);
+                    }
+                }
+            }
+        }
+        // Кнопка переименовать
+        private void button11_Click(object sender, EventArgs e)
+        {
+            if (listView1.FocusedItem.Focused)
+            {
+                string newPath = pathClick + "\\" + listView1.FocusedItem.Text;
+                inputName IN = new inputName(); IN.ShowDialog();
+                if (File.Exists(newPath))
+                {
+                    File.Move(newPath, pathClick + "\\" + IN.name);
+                    AddFoldersWithFileFromEnterPath(pathClick);
+                }
+                else
+                {
+                    Directory.Move(newPath, pathClick + "\\" + IN.name);
+                    AddFoldersWithFileFromEnterPath(pathClick);
+                }
+            }
+        }
+        // Кнопка удаления выбранного папки или файла
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (listView1.FocusedItem.Focused)
+            {
+                string newPath = pathClick + "\\" + listView1.FocusedItem.Text;
+                if (File.Exists(newPath))
+                {
+                    var m1 = MessageBox.Show("Файл: " + newPath + " будет удален.", "Удаление", MessageBoxButtons.YesNo);
+                    if (m1 == DialogResult.Yes)
+                    {
+                        File.Delete(newPath);
+                        AddFoldersWithFileFromEnterPath(pathClick);
+                    }
+                }
+                else
+                {
+                    var m2 = MessageBox.Show("Папка: " + newPath + " будет удалена.", "Удаление", MessageBoxButtons.YesNo);
+                    if (m2 == DialogResult.Yes)
+                    {
+                        Directory.Delete(newPath, true);
+                        AddFoldersWithFileFromEnterPath(pathClick);
+                    }
+                }
+            }
+        }
+        #endregion
 
 
 
-
-
+        #region Events
         // Событие для горячих клавиш
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -212,7 +294,8 @@ namespace RedRat3
         {
             if (!Char.IsDigit(e.KeyChar) && e.KeyChar != Convert.ToChar(8)) { e.Handled = true; }
         }
-
+        #endregion
+        #region Buttons
         // Кнопка поиска RedRat3(F1)
         private void поискRedRat3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -246,7 +329,8 @@ namespace RedRat3
                         button3.BackColor = Color.FromArgb(19, 129, 214);
                     }
                 }
-                поискRedRat3ToolStripMenuItem.PerformClick();
+                SearchRedRat SR = new SearchRedRat();
+                RedRat3 = SR.FindRedRat();
             }
             catch (Exception ex)
             {
@@ -256,6 +340,8 @@ namespace RedRat3
         // Кнопка захвата одиночного сигнала
         private void button1_Click(object sender, EventArgs e)
         {
+            ToolTip TT = new ToolTip();
+            TT.SetToolTip(button1, "Сигнал сохранится по пути левее");
             try
             {
                 SearchRedRat SR3 = new SearchRedRat();
@@ -275,6 +361,7 @@ namespace RedRat3
                             button2.BackColor = Color.FromArgb(247, 98, 1);
                             button3.Enabled = true;
                             button3.BackColor = Color.FromArgb(19, 129, 214);
+                            AddFoldersWithFileFromEnterPath(pathClick);
                             FTC.Close();
                         }
                     });
@@ -341,12 +428,12 @@ namespace RedRat3
             }
         }
         // Кнопка вызова пульта
-        private void button4_Click(object sender, EventArgs e)
+        private void пультToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RemoteController RC = new RemoteController();
             RC.ShowDialog();
         }
-        //Кнопка сохранения драйверов
+        // Кнопка сохранения драйверов
         private void выгрузитьДрайвераДляRedRat3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -359,17 +446,11 @@ namespace RedRat3
                 MessageBox.Show(ex.Message);
             }
         }
-
-       
+        // Кнопка вывода папки сигналов
+        private void button7_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(tempPathForCopyPast);
+        }
+        #endregion
     }
 }
-
-//Передача и вызов значения с формы на форму
-//public partial class FormSetting : Form
-//{
-//    private int mili_second;
-//    public int ms { get { return mili_second; } set { mili_second = value; } }
-//}
-//FormSetting FS = new FormSetting();
-//FS.ShowDialog();
-//        interVal = FS.ms;
