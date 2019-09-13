@@ -1,7 +1,13 @@
 ﻿using System;
 using RedRat.IR;
+using System.IO;
 using RedRat.RedRat3;
+using System.Drawing;
+using System.Threading;
+using System.Diagnostics;
 using System.Windows.Forms;
+using System.ComponentModel;
+using System.Threading.Tasks;
 
 namespace RedRat3
 {
@@ -10,24 +16,63 @@ namespace RedRat3
         public static IRedRat3 RedRat3;
         public static IRPacket OutputIR;
         public static int interval;
-        
-        public FormTimerOutputIRsignal(IRedRat3 _RedRat3, IRPacket _OutputIR, Int32 _Interval)
+        public bool folderOutput;
+        public string pathToFolder;
+        public FileInfo[] fileInfos;
+        SignalOutput SO = new SignalOutput();
+
+        public FormTimerOutputIRsignal(IRedRat3 _RedRat3, Int32 _Interval, IRPacket _OutputIR = null,
+                                        bool _folderOutput = false, string _pathToFolder = "", FileInfo[] _fileInfos = null)
         {
             InitializeComponent();
             RedRat3 = _RedRat3;
             OutputIR = _OutputIR;
             interval = _Interval;
-            timer1.Interval = interval;
-            timer1.Start();
+            folderOutput = _folderOutput;
+            pathToFolder = _pathToFolder;
+            fileInfos = _fileInfos;
+            if (!folderOutput)
+            {
+                timer1.Interval = interval;
+                timer1.Start();
+            }
+            else
+            {
+                button1.BackColor = Color.DarkGray;
+                button1.Text = "Отправка...";
+                foreach (FileInfo file in fileInfos)
+                {
+                    OutputIR = SO.ConvertingBINARYtoIRsignal(pathToFolder + "\\" + file.Name);
+                    if ((RedRat3 != null) && (OutputIR != null))
+                    {
+                        SO.OutputOneIRsignal(RedRat3, OutputIR);
+                        Thread.Sleep(interval);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ошибка. Проверьте ввеленные значения интервала, или Подключение RedRat3, или плохо записан сигнал.");
+                    }
+                }
+                button1.BackColor = Color.LightGreen;
+                button1.Text = "OK";
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            timer1.Stop();
-            Close();
+            if (!folderOutput)
+            {
+                timer1.Stop();
+                Close();
+            }
+            else
+            {
+                Close();
+            }
+
         }
 
-        SignalOutput SO = new SignalOutput();
         // Таймер вывода сигнала
         private void timer1_Tick(object sender, EventArgs e)
         {

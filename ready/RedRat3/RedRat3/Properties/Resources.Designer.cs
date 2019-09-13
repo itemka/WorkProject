@@ -113,9 +113,9 @@ namespace RedRat3.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap folder_30 {
+        internal static System.Drawing.Bitmap folder_25 {
             get {
-                object obj = ResourceManager.GetObject("folder_30", resourceCulture);
+                object obj = ResourceManager.GetObject("folder_25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,6 +143,36 @@ namespace RedRat3.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_вставить_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_вставить_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open_file_25 {
+            get {
+                object obj = ResourceManager.GetObject("open_file_25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remote_control_30 {
+            get {
+                object obj = ResourceManager.GetObject("remote_control_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rename_30 {
             get {
                 object obj = ResourceManager.GetObject("rename_30", resourceCulture);
@@ -161,12 +191,42 @@ namespace RedRat3.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rr_3 {
+            get {
+                object obj = ResourceManager.GetObject("rr_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon rr3_Zdb_icon {
+            get {
+                object obj = ResourceManager.GetObject("rr3_Zdb_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
         internal static byte[] Драйвера_для_RedRat3 {
             get {
                 object obj = ResourceManager.GetObject("Драйвера_для_RedRat3", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap инсталлятор_30 {
+            get {
+                object obj = ResourceManager.GetObject("инсталлятор_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

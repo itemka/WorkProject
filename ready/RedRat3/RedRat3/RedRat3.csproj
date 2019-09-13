@@ -51,7 +51,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>RR-Small.ico</ApplicationIcon>
+    <ApplicationIcon>rr3_Zdb_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="RedRat, Version=4.13.6192.18094, Culture=neutral, PublicKeyToken=ae0a3380d5973a3c, processorArchitecture=MSIL">
@@ -145,6 +145,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="rr3_Zdb_icon.ico" />
     <EmbeddedResource Include="RedRat.dll" />
     <None Include="Resources\Драйвера_для_RedRat3.zip" />
     <None Include="Resources\Ресурс 1.png" />
@@ -233,6 +234,17 @@
     <None Include="Resources\folder_30.png" />
     <None Include="Resources\delete_30.png" />
     <None Include="Resources\rename_30.png" />
+    <None Include="Resources\инсталлятор_30.png" />
+    <None Include="Resources\remote_control_30.png" />
+    <None Include="Resources\open_file.png" />
+    <None Include="Resources\open_file_30.png" />
+    <None Include="Resources\rr3.png" />
+    <None Include="Resources\rr_3.png" />
+    <None Include="Resources\folder_25.png" />
+    <None Include="Resources\open_file_20.png" />
+    <None Include="Resources\open_file_25.png" />
+    <None Include="Resources\icons8-вставить-30.png" />
+    <None Include="Resources\rr3_Zdb_icon.ico" />
     <Content Include="RR-Small.ico" />
   </ItemGroup>
   <ItemGroup>

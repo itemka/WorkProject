@@ -60,7 +60,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormTimerOutputIRsignal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Вывод сигнала по таймеру";
+            this.Text = "Отправка сигнала";
             this.ResumeLayout(false);
 
         }

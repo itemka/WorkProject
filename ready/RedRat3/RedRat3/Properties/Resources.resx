@@ -292,10 +292,28 @@
   <data name="delete_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="folder_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\folder_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="rename_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rename_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder_25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_вставить_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-вставить-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="open_file_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open_file_25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remote_control_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remote_control_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rr_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rr_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="инсталлятор_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\инсталлятор_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rr3_Zdb_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rr3_Zdb_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

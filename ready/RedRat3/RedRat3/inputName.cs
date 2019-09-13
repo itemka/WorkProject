@@ -5,14 +5,16 @@ namespace RedRat3
 {
     public partial class inputName : Form
     {
+        private string _name = "";
+        public string name { get { return _name; } set { _name = value; } }
+
         public inputName()
         {
             InitializeComponent();
             this.KeyPreview = true;
-        }
+            textBox1.Text = name;
 
-        public string name { get { return _name; } set { _name = value; } }
-        private string _name;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
