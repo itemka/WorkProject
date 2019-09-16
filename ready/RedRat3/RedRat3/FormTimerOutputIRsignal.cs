@@ -21,8 +21,8 @@ namespace RedRat3
         public FileInfo[] fileInfos;
         SignalOutput SO = new SignalOutput();
 
-        public FormTimerOutputIRsignal(IRedRat3 _RedRat3, Int32 _Interval, IRPacket _OutputIR = null,
-                                        bool _folderOutput = false, string _pathToFolder = "", FileInfo[] _fileInfos = null)
+
+        public FormTimerOutputIRsignal(IRedRat3 _RedRat3, Int32 _Interval, IRPacket _OutputIR = null,bool _folderOutput = false, string _pathToFolder = "", FileInfo[] _fileInfos = null)
         {
             InitializeComponent();
             RedRat3 = _RedRat3;
@@ -39,7 +39,6 @@ namespace RedRat3
             else
             {
                 button1.BackColor = Color.DarkGray;
-                button1.Text = "Отправка...";
                 foreach (FileInfo file in fileInfos)
                 {
                     OutputIR = SO.ConvertingBINARYtoIRsignal(pathToFolder + "\\" + file.Name);
@@ -54,7 +53,6 @@ namespace RedRat3
                     }
                 }
                 button1.BackColor = Color.LightGreen;
-                button1.Text = "OK";
             }
 
         }

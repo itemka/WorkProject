@@ -9,13 +9,14 @@ using System.Windows.Forms;
 namespace RedRat3
 {
     // Захват сигнала
-    public class IRsignalTrainingMode
+    public class IRsignalTrainingMode : Form
     {
         protected IRedRat3 RedRat3;
         IRPacket irPacket = null;
         ModulatedSignal modSignal = null;
         //Установите истинный один раз сигнал (или ex)
         protected bool haveSignal = false;
+        public static string tempMessage = "";
 
         // Обрабатывает входной сигнал (или ошибку) из RedRat.
         public void SignalDataHandler(object sender, EventArgs e)
@@ -72,7 +73,8 @@ namespace RedRat3
                 {
                     inputName IN = new inputName(); IN.ShowDialog();
                     RRUtil.SerializePacketToBinary(Form1.pathClick + "\\" + IN.name, modSignal);//SerializePacketToXML                    
-                    var m = MessageBox.Show("Файл \"" + IN.name + "\" сохранен.", "Прием сигнала", MessageBoxButtons.OK);
+                    //var m = MessageBox.Show("Файл \"" + IN.name + "\" сохранен.", "Прием сигнала", MessageBoxButtons.OK);
+                    tempMessage = "Файл \"" + IN.name + "\" сохранен.";
                 }
                 else
                 {
