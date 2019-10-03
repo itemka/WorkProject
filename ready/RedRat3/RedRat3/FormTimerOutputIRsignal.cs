@@ -41,7 +41,7 @@ namespace RedRat3
                 button1.BackColor = Color.DarkGray;
                 foreach (FileInfo file in fileInfos)
                 {
-                    OutputIR = SO.ConvertingBINARYtoIRsignal(pathToFolder + "\\" + file.Name);
+                    OutputIR = SO.ConvertingBINARYorXMLtoIRsignal(pathToFolder + "\\" + file.Name);
                     if ((RedRat3 != null) && (OutputIR != null))
                     {
                         SO.OutputOneIRsignal(RedRat3, OutputIR);

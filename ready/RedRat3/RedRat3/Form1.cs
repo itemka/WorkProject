@@ -52,7 +52,7 @@ namespace RedRat3
             AddFoldersWithFileFromEnterPath(modelsPath);
         }
 
-        public void Messages(string message = "") { textBox2.Text = "- " + message + Environment.NewLine + textBox2.Text; }
+        public void Messages(string message = "") { textBox2.Text = "- " + message + Environment.NewLine + Environment.NewLine + textBox2.Text; }
 
         #region ListView
         // Send path and it returned name Directory where be this exe-file   
@@ -162,7 +162,7 @@ namespace RedRat3
             {
                 //MessageBox.Show("File is choice!");
                 //Process.Start(pathClick);
-                OutputIR = SO.ConvertingBINARYtoIRsignal(newPath);
+                OutputIR = SO.ConvertingBINARYorXMLtoIRsignal(newPath);
                 if (OutputIR != null)
                 {
                     Messages("Выбран файл: " + listView1.FocusedItem.Text);
@@ -222,20 +222,19 @@ namespace RedRat3
             TT.SetToolTip(button4, "Копировать");
         }
         // Копия папки
-        public static void CopyDirectory(DirectoryInfo source, DirectoryInfo destination)
+        public static void CopyDirectory(DirectoryInfo sourceFolder, DirectoryInfo destinationFolder)
         {
-            if (!destination.Exists) { destination.Create(); }
+            MessageBox.Show(sourceFolder.FullName);
+            if (!destinationFolder.Exists) { destinationFolder.Create(); }
             // Copy all files.
-            FileInfo[] files = source.GetFiles();
-            foreach (FileInfo file in files) { file.CopyTo(Path.Combine(destination.FullName, file.Name)); }
+            FileInfo[] files = sourceFolder.GetFiles();
+            foreach (FileInfo file in files) { file.CopyTo(Path.Combine(destinationFolder.FullName, file.Name)); }
             // Process subdirectories.
-            DirectoryInfo[] dirs = source.GetDirectories();
+            DirectoryInfo[] dirs = sourceFolder.GetDirectories();
             foreach (DirectoryInfo dir in dirs)
             {
-                // Get destination directory.
-                string destinationDir = Path.Combine(destination.FullName, dir.Name);
                 // Call CopyDirectory() recursively.
-                CopyDirectory(dir, new DirectoryInfo(destinationDir));
+                CopyDirectory(dir, new DirectoryInfo(Path.Combine(destinationFolder.FullName, dir.Name)) /*Get destination directory.*/);
             }
         }
         // Кнопка вставить
@@ -258,11 +257,20 @@ namespace RedRat3
                         else
                         {
                             //Directory.Move(tempPathForCopyPast, pathClick + "\\" + objectName);
-                            DirectoryInfo sourceDir = new DirectoryInfo(tempPathForCopyPast);
-                            DirectoryInfo destinationDir = new DirectoryInfo(pathClick + "\\" + ReverseStringAndDelete(tempPathForCopyPast));
-                            CopyDirectory(sourceDir, destinationDir);
-                            AddFoldersWithFileFromEnterPath(pathClick);
-                            Messages("Папка вставлена.");
+                            DirectoryInfo sourceFolder = new DirectoryInfo(tempPathForCopyPast);
+                            DirectoryInfo destinationFolder = new DirectoryInfo(pathClick + "\\" + ReverseStringAndDelete(tempPathForCopyPast));
+                            if (pathClick.Contains(ReverseStringAndDelete(tempPathForCopyPast))) //change have/not have substring into path of 
+                            {
+                                string errorCopyText = "С целью предотвращения рекурсии - Копирование отменено" + Environment.NewLine + " Попытка скопировать в ту же папку.";
+                                MessageBox.Show(errorCopyText);
+                                Messages(errorCopyText);
+                            }
+                            else
+                            {
+                                CopyDirectory(sourceFolder, destinationFolder);
+                                AddFoldersWithFileFromEnterPath(pathClick);
+                                Messages("Папка вставлена.");
+                            }
                         }
                     }
                 }
@@ -320,6 +328,7 @@ namespace RedRat3
                         {
                             File.Delete(newPath);
                             AddFoldersWithFileFromEnterPath(pathClick);
+                            Messages("Файл: " + newPath + " ,был удален.");
                         }
                     }
                     else
@@ -329,6 +338,7 @@ namespace RedRat3
                         {
                             Directory.Delete(newPath, true);
                             AddFoldersWithFileFromEnterPath(pathClick);
+                            Messages("Папка: " + newPath + " ,была удалена.");
                         }
                     }
                 }
@@ -401,7 +411,7 @@ namespace RedRat3
                 if (OFD.ShowDialog() == DialogResult.OK)
                 {
                     Messages("Выбран файл: " + OFD.FileName);
-                    OutputIR = SO.ConvertingBINARYtoIRsignal(OFD.FileName);
+                    OutputIR = SO.ConvertingBINARYorXMLtoIRsignal(OFD.FileName);
                     if (OutputIR != null)
                     {
                         button2.Enabled = true;
@@ -437,7 +447,7 @@ namespace RedRat3
                     IRsignalTrainingMode IRSTM = new IRsignalTrainingMode();
                     var FTC = new FormTimerCapture(10, "Подайте сигнал с пульта");
                     var waitsignal2 = Task.Factory.StartNew(() => { FTC.ShowDialog(); });
-                    
+
                     var qwe = Task.Factory.StartNew(() =>
                     {
                         IRSTM.CaptureSignal();
@@ -448,7 +458,7 @@ namespace RedRat3
                             button2.BackColor = Color.FromArgb(247, 98, 1);
                             button3.Enabled = true;
                             button3.BackColor = Color.FromArgb(19, 129, 214);
-                            
+
                             AddFoldersWithFileFromEnterPath(pathClick);
                             FTC.Close();
                         }

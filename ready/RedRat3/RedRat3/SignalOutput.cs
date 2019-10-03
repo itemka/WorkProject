@@ -2,6 +2,7 @@
 using RedRat.IR;
 using RedRat.Util;
 using RedRat.RedRat3;
+using System.Windows.Forms;
 
 namespace RedRat3
 {
@@ -11,15 +12,23 @@ namespace RedRat3
         protected IRPacket irPacket = null;
 
         // Вывод одного сигнала
-        public void OutputOneIRsignal(IRedRat3 RedRat3,IRPacket signal)
+        public void OutputOneIRsignal(IRedRat3 RedRat3, IRPacket signal)
         {
             RedRat3.OutputModulatedSignal(signal);
         }
 
-        // Converting XML to IRsignal
-        public IRPacket ConvertingBINARYtoIRsignal(String FileName)
+        //Проверяет, xml это или нет
+        bool IsXmlFile(string fileName)
         {
-            return irPacket = RRUtil.DeserializePacketFromBinary(FileName);
+            var extension = fileName.Substring(startIndex: fileName.Length - 3);
+            return string.Equals(extension, "xml", StringComparison.InvariantCultureIgnoreCase);
+        }
+
+        // Converting BIN/XML to IRsignal
+        public IRPacket ConvertingBINARYorXMLtoIRsignal(String FileName)
+        {
+            if (IsXmlFile(FileName)) { return irPacket = RRUtil.DeserializePacketFromXML(FileName); }
+            else { return irPacket = RRUtil.DeserializePacketFromBinary(FileName); }
         }
     }
 }

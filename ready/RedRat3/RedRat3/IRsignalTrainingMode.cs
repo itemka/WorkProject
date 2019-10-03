@@ -71,10 +71,20 @@ namespace RedRat3
                 while (!haveSignal) { Thread.Sleep(100); }
                 if (modSignal != null)
                 {
-                    inputName IN = new inputName(); IN.ShowDialog();
-                    RRUtil.SerializePacketToBinary(Form1.pathClick + "\\" + IN.name, modSignal);//SerializePacketToXML                    
-                    //var m = MessageBox.Show("Файл \"" + IN.name + "\" сохранен.", "Прием сигнала", MessageBoxButtons.OK);
-                    tempMessage = "Файл \"" + IN.name + "\" сохранен.";
+                    var mes = MessageBox.Show("OK - cохранить XML" + Environment.NewLine + "CANCEL - cохранить BIN", "Вариант сохранения файла", MessageBoxButtons.OKCancel);
+                    if (mes == DialogResult.OK)
+                    {
+                        inputName IN = new inputName(); IN.ShowDialog();
+                        RRUtil.SerializePacketToXML(Form1.pathClick + "\\" + IN.name + ".xml", modSignal);
+                        tempMessage = "XML файл \"" + IN.name + "\" сохранен.";
+                    }
+                    else
+                    {
+                        inputName IN = new inputName(); IN.ShowDialog();
+                        RRUtil.SerializePacketToBinary(Form1.pathClick + "\\" + IN.name + ".bin", modSignal);//SerializePacketToXML                    
+                        //var m = MessageBox.Show("Файл \"" + IN.name + "\" сохранен.", "Прием сигнала", MessageBoxButtons.OK);
+                        tempMessage = "BIN файл \"" + IN.name + "\" сохранен.";
+                    }
                 }
                 else
                 {
