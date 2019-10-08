@@ -33,14 +33,17 @@ namespace RedRat3
             InitializeComponent();
             //Для горячих клавиш
             this.KeyPreview = true;
-            button2.Enabled = false;
-            button2.BackColor = Color.Gray;
+            label1.Enabled = false;
             button3.Enabled = false;
-            button3.BackColor = Color.Gray;
             textBox1.Enabled = false;
-            textBox1.BackColor = Color.Gray;
-            flowLayoutPanel1.BackColor = Color.Gray;
-            label1.BackColor = Color.Gray;
+
+            label4.Enabled = false;
+            button7.Enabled = false;
+            textBox3.Enabled = false;
+
+            button2.Enabled = false;
+
+
 
             while (!Directory.Exists(RedRat3_Data)) { Directory.CreateDirectory(RedRat3_Data); }
             while (!Directory.Exists(modelsPath)) { Directory.CreateDirectory(modelsPath); }
@@ -166,14 +169,15 @@ namespace RedRat3
                 if (OutputIR != null)
                 {
                     Messages("Выбран файл: " + listView1.FocusedItem.Text);
-                    button2.Enabled = true;
-                    button2.BackColor = Color.FromArgb(247, 98, 1);
+                    label1.Enabled = true;
                     button3.Enabled = true;
-                    button3.BackColor = Color.FromArgb(128, 64, 0);
                     textBox1.Enabled = true;
-                    textBox1.BackColor = Color.White;
-                    flowLayoutPanel1.BackColor = Color.FromArgb(128, 64, 0);
-                    label1.BackColor = Color.FromArgb(128, 64, 0);
+
+                    label4.Enabled = true;
+                    button7.Enabled = true;
+                    textBox3.Enabled = true;
+
+                    button2.Enabled = true;
                 }
             }
             else { AddFoldersWithFileFromEnterPath(newPath, false); }
@@ -414,12 +418,15 @@ namespace RedRat3
                     OutputIR = SO.ConvertingBINARYorXMLtoIRsignal(OFD.FileName);
                     if (OutputIR != null)
                     {
-                        button2.Enabled = true;
-                        button2.BackColor = Color.FromArgb(247, 98, 1);
+                        label1.Enabled = true;
                         button3.Enabled = true;
-                        button3.BackColor = Color.FromArgb(19, 129, 214);
                         textBox1.Enabled = true;
-                        textBox1.BackColor = Color.Red;
+
+                        label4.Enabled = true;
+                        button7.Enabled = true;
+                        textBox3.Enabled = true;
+
+                        button2.Enabled = true;
                     }
                 }
                 SearchRedRat SR = new SearchRedRat();
@@ -454,10 +461,15 @@ namespace RedRat3
                         OutputIR = IRSTM.GetSignal();
                         if (OutputIR != null)
                         {
-                            button2.Enabled = true;
-                            button2.BackColor = Color.FromArgb(247, 98, 1);
+                            label1.Enabled = true;
                             button3.Enabled = true;
-                            button3.BackColor = Color.FromArgb(19, 129, 214);
+                            textBox1.Enabled = true;
+
+                            label4.Enabled = true;
+                            button7.Enabled = true;
+                            textBox3.Enabled = true;
+
+                            button2.Enabled = true;
 
                             AddFoldersWithFileFromEnterPath(pathClick);
                             FTC.Close();
@@ -469,6 +481,11 @@ namespace RedRat3
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            ToolTip TT = new ToolTip();
+            TT.SetToolTip(button1, "F1");
         }
         // Кнопка вывода одиночного сигнала
         private void button2_Click(object sender, EventArgs e)
@@ -490,6 +507,11 @@ namespace RedRat3
                 MessageBox.Show(ex.Message);
             }
         }
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            ToolTip TT = new ToolTip();
+            TT.SetToolTip(button2, "+");
+        }
         // Кнопка вывода сигнала по таймеру 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -502,7 +524,7 @@ namespace RedRat3
                 else
                 {
                     interVal = Convert.ToInt32(textBox1.Text); // Установка переодичности вывода сигнала
-                    if (interVal > 0 && interVal < 9999999)
+                    if (interVal > 0 && interVal < 9999999 && interVal >= 400)
                     {
                         FormTimerOutputIRsignal FTOIRS = new FormTimerOutputIRsignal(RedRat3, interVal, OutputIR);
                         if ((RedRat3 != null) && (OutputIR != null))
@@ -516,7 +538,7 @@ namespace RedRat3
                     }
                     else
                     {
-                        MessageBox.Show("Заданный интервал не входит в диапазон от 0 до 9999999.", "Вывод сигнала", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Введенный интервал не соответствует (Ввод в милисекндах и не менее 400ms)", "Вывод сигнала", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
             }
@@ -524,6 +546,11 @@ namespace RedRat3
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private void button3_MouseEnter(object sender, EventArgs e)
+        {
+            ToolTip TT = new ToolTip();
+            TT.SetToolTip(button3, "F4");
         }
         // Кнопка вызова пульта
         private void button12_Click(object sender, EventArgs e)
@@ -553,28 +580,38 @@ namespace RedRat3
         // Кнопка вывода папки сигналов
         private void button7_Click(object sender, EventArgs e)
         {
-            string newPath = pathClick + "\\" + listView1.FocusedItem.Text;
-            if (!File.Exists(newPath))
+            try
             {
-                DirectoryInfo directory = new DirectoryInfo(newPath);
-                DirectoryInfo[] dirs = directory.GetDirectories();
-                FileInfo[] fileInfo = directory.GetFiles();
-                if (dirs.Length == 0)
+                string newPath = pathClick + "\\" + listView1.FocusedItem.Text;
+                if (!File.Exists(newPath))
                 {
-                    if (fileInfo.Length != 0)
+                    DirectoryInfo directory = new DirectoryInfo(newPath);
+                    DirectoryInfo[] dirs = directory.GetDirectories();
+                    FileInfo[] fileInfo = directory.GetFiles();
+                    if (dirs.Length == 0)
                     {
-                        if (textBox3.Text == "")
-                        { Messages("Введите интервал между файлами в милисекундах"); }
-                        else
+                        if (fileInfo.Length != 0)
                         {
-                            FormTimerOutputIRsignal FTOIRS = new FormTimerOutputIRsignal(RedRat3, Convert.ToInt32(textBox3.Text), null, true, newPath, fileInfo);
+                            interVal = Convert.ToInt32(textBox3.Text);
+                            if (interVal > 0 && interVal < 9999999 && interVal >= 400) { MessageBox.Show("Введенный интервал не соответствует (Ввод в милисекндах и не менее 400ms)"); }
+                            else { FormTimerOutputIRsignal FTOIRS = new FormTimerOutputIRsignal(RedRat3, Convert.ToInt32(textBox3.Text), null, true, newPath, fileInfo); }
                         }
+                        else { Messages("Ошибка. Нет Файлов. Для вывода добавьте сигналы."); }
                     }
-                    else { Messages("Ошибка. Нет Файлов. Для вывода добавьте сигналы."); }
+                    else { Messages("Ошибка. Присутствует папка. Для корректной работы удалите лишние папки. "); }
                 }
-                else { Messages("Ошибка. Присутствует папка. Для корректной работы удалите лишние папки. "); }
+                else { Messages("Ошибка. Выбран файл"); }
             }
-            else { Messages("Ошибка. Выбран файл"); }
+            catch (Exception)
+            {
+                Messages("Ошибка, не выбрана папка. Попробуйте сново.");
+            }
+
+        }
+        private void button7_MouseEnter(object sender, EventArgs e)
+        {
+            ToolTip TT = new ToolTip();
+            TT.SetToolTip(button7, "F5");
         }
         #endregion
     }

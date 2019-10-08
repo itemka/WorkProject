@@ -22,23 +22,23 @@ namespace RedRat3
         SignalOutput SO = new SignalOutput();
 
 
-        public FormTimerOutputIRsignal(IRedRat3 _RedRat3, Int32 _Interval, IRPacket _OutputIR = null,bool _folderOutput = false, string _pathToFolder = "", FileInfo[] _fileInfos = null)
+        public FormTimerOutputIRsignal(IRedRat3 _RedRat3, Int32 _Interval, IRPacket _OutputIR = null, bool _folderOutput = false, string _pathToFolder = "", FileInfo[] _fileInfos = null)
         {
             InitializeComponent();
             RedRat3 = _RedRat3;
-            OutputIR = _OutputIR;
             interval = _Interval;
+            OutputIR = _OutputIR;
             folderOutput = _folderOutput;
             pathToFolder = _pathToFolder;
             fileInfos = _fileInfos;
-            if (!folderOutput)
+
+            if (folderOutput == false)
             {
                 timer1.Interval = interval;
                 timer1.Start();
             }
             else
-            {
-                button1.BackColor = Color.DarkGray;
+            {   
                 foreach (FileInfo file in fileInfos)
                 {
                     OutputIR = SO.ConvertingBINARYorXMLtoIRsignal(pathToFolder + "\\" + file.Name);
@@ -52,23 +52,29 @@ namespace RedRat3
                         MessageBox.Show("Ошибка. Проверьте ввеленные значения интервала, или Подключение RedRat3, или плохо записан сигнал.");
                     }
                 }
-                button1.BackColor = Color.LightGreen;
             }
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!folderOutput)
+            try
+            {
+                if (folderOutput == false)
+                {
+                    timer1.Stop();
+                    Close();
+                }
+                else
+                {
+                    Close();
+                }
+            }
+            catch (Exception)
             {
                 timer1.Stop();
                 Close();
             }
-            else
-            {
-                Close();
-            }
-
         }
 
         // Таймер вывода сигнала

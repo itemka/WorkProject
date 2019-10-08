@@ -55,52 +55,49 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(141)))), ((int)(((byte)(69)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(324, 393);
+            this.button1.Location = new System.Drawing.Point(336, 400);
+            this.button1.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 40);
+            this.button1.Size = new System.Drawing.Size(132, 48);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Захватить сигнал (F1)";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Text = "Захватить сигнал";
+            this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(98)))), ((int)(((byte)(1)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button2.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(505, 393);
+            this.button2.Location = new System.Drawing.Point(474, 400);
+            this.button2.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 40);
+            this.button2.Size = new System.Drawing.Size(176, 48);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Вывести сигнал (+)";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Text = "Вывести сигнал";
+            this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.BackColor = System.Drawing.SystemColors.Control;
             this.button3.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(505, 273);
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button3.Location = new System.Drawing.Point(474, 326);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(171, 62);
+            this.button3.Size = new System.Drawing.Size(178, 45);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Выводить по таймеру (F4)";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Text = "Выводить по таймеру";
+            this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // openFileDialog1
@@ -119,10 +116,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(332, 323);
+            this.label1.Margin = new System.Windows.Forms.Padding(3, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 19);
             this.label1.TabIndex = 8;
@@ -130,12 +127,12 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox1.Location = new System.Drawing.Point(3, 22);
+            this.textBox1.Location = new System.Drawing.Point(336, 345);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 26);
+            this.textBox1.Size = new System.Drawing.Size(132, 26);
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "600";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -153,7 +150,7 @@
             this.listView1.Location = new System.Drawing.Point(28, 70);
             this.listView1.Margin = new System.Windows.Forms.Padding(0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(298, 363);
+            this.listView1.Size = new System.Drawing.Size(298, 390);
             this.listView1.SmallImageList = this.imageList1;
             this.listView1.TabIndex = 12;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -178,15 +175,15 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.BackColor = System.Drawing.SystemColors.Control;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button7.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(505, 327);
+            this.button7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button7.Location = new System.Drawing.Point(474, 251);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(171, 65);
+            this.button7.Size = new System.Drawing.Size(178, 45);
             this.button7.TabIndex = 17;
-            this.button7.Text = "Вывести папку (F5)";
+            this.button7.Text = "Вывести папку";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -277,7 +274,7 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.Location = new System.Drawing.Point(-2, 70);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(32, 363);
+            this.button5.Size = new System.Drawing.Size(32, 390);
             this.button5.TabIndex = 15;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -358,61 +355,61 @@
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(352, 204);
+            this.textBox2.Size = new System.Drawing.Size(335, 154);
             this.textBox2.TabIndex = 30;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(332, 227);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 15);
+            this.label4.Size = new System.Drawing.Size(124, 38);
             this.label4.TabIndex = 32;
-            this.label4.Text = "Интервал между файлами";
+            this.label4.Text = "Интервал между\r\nфайлами";
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox3.Location = new System.Drawing.Point(3, 18);
+            this.textBox3.Location = new System.Drawing.Point(336, 268);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(110, 28);
+            this.textBox3.Size = new System.Drawing.Size(132, 28);
             this.textBox3.TabIndex = 31;
             this.textBox3.Text = "600";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // flowLayoutPanel1
+            // label5
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.textBox1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(324, 273);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(182, 62);
-            this.flowLayoutPanel1.TabIndex = 12;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Location = new System.Drawing.Point(329, 308);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(323, 2);
+            this.label5.TabIndex = 33;
             // 
-            // flowLayoutPanel2
+            // label6
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.flowLayoutPanel2.Controls.Add(this.label4);
-            this.flowLayoutPanel2.Controls.Add(this.textBox3);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(324, 327);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(182, 65);
-            this.flowLayoutPanel2.TabIndex = 13;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Location = new System.Drawing.Point(329, 383);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(323, 2);
+            this.label6.TabIndex = 34;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(676, 432);
+            this.ClientSize = new System.Drawing.Size(659, 459);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
@@ -430,7 +427,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -439,10 +435,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RedRat3";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -474,8 +466,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 
