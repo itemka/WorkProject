@@ -1,13 +1,28 @@
 ﻿using System;
-using RedRat.IR;
 using System.IO;
-using RedRat.RedRat3;
+using System.Xml;
+using System.Linq;
+using System.Text;
+using System.Timers;
 using System.Drawing;
+using System.IO.Ports;
 using System.Threading;
+using System.Reflection;
 using System.Diagnostics;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
+using RedRat;
+using RedRat.IR;
+using RedRat.USB;
+using RedRat.Util;
+using RedRat.RedRat3;
+using RedRat.RedRat3.USB;
+using RedRat.AVDeviceMngmt;
 
 namespace RedRat3
 {
@@ -552,12 +567,6 @@ namespace RedRat3
             ToolTip TT = new ToolTip();
             TT.SetToolTip(button3, "F4");
         }
-        // Кнопка вызова пульта
-        private void button12_Click(object sender, EventArgs e)
-        {
-            RemoteController RC = new RemoteController();
-            RC.ShowDialog();
-        }
         // Кнопка сохранения драйверов
         private void button8_Click(object sender, EventArgs e)
         {
@@ -614,5 +623,97 @@ namespace RedRat3
             TT.SetToolTip(button7, "F5");
         }
         #endregion
+
+
+
+        private string pointDelete(string str)
+        {
+            string newStr = "";
+            char[] arrayChar = str.ToCharArray();
+            for (int i = 0; i < arrayChar.Length; i++)
+            {
+                if (arrayChar[i] == '.') newStr += "";
+                else newStr += arrayChar[i];
+            }
+            char[] newString = newStr.ToCharArray();
+            return new string(newString);
+        }
+
+
+        string signals;
+        protected AVDeviceDB avDeviceDB;
+        protected AVDevice avDevice;
+        string avDeviceDBName = "";
+
+        protected void LoadDB()
+        {
+            // Read signal database from XML file.
+            var openFileDialog = new OpenFileDialog
+            {
+                Filter = "XML files (*.xml)|*.xml|All files (*.*)|*.*",
+                RestoreDirectory = true
+            };
+
+            if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+
+            avDeviceDBName = openFileDialog.FileName;
+            var fName = openFileDialog.FileName;
+            var ser = new XmlSerializer(typeof(AVDeviceDB));
+            FileStream fs = null;
+            try
+            {
+                fs = new FileStream((new FileInfo(fName)).FullName, FileMode.Open);
+                avDeviceDB = (AVDeviceDB)ser.Deserialize(fs); ;
+                //Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            finally
+            {
+                if (fs != null) fs.Close();
+            }
+        }
+
+        // Кнопка вызова пульта
+        private void button12_Click(object sender, EventArgs e)
+        {
+            //RemoteController RC = new RemoteController();
+            //RC.ShowDialog();
+
+            LoadDB();
+            AVDevice[] AVDevices = avDeviceDB.AVDevices;
+            //Беру последнее имя и удаляю точку в имени
+            string nameFolderAVDeviceDB = ReverseStringAndDelete(pointDelete(avDeviceDBName));
+            if (!Directory.Exists(pathClick + "\\" + nameFolderAVDeviceDB))
+            {
+                Directory.CreateDirectory(pathClick + "\\" + nameFolderAVDeviceDB); //MessageBox.Show(pathClick + "\\" + nameFolderAVDeviceDB);
+            }
+
+            AddFoldersWithFileFromEnterPath(pathClick);
+
+            foreach (AVDevice item in AVDevices)
+            {
+                signals += "________" + item.Name + Environment.NewLine;
+
+                if (!Directory.Exists(pathClick + "\\" + nameFolderAVDeviceDB + "\\" + item.Name))
+                {
+                    Directory.CreateDirectory(pathClick + "\\" + nameFolderAVDeviceDB + "\\" + item.Name); //MessageBox.Show(pathClick + "\\" + nameFolderAVDeviceDB);
+                }
+                else { Messages("Такая папка существует."); }
+
+                IRPacket[] Signals = item.Signals;
+                foreach (IRPacket element in Signals)
+                {
+                    //MessageBox.Show(pathClick + "\\" + nameFolderAVDeviceDB + "\\" + item.Name + "\\" + element.Name + ".xml");
+                    RRUtil.SerializePacketToXML(pathClick + "\\" + nameFolderAVDeviceDB + "\\" + item.Name + "\\" + element.Name + ".xml", element);
+                    signals += "-" + element.Name + Environment.NewLine;
+                }
+
+            }
+            MessageBox.Show(signals);
+        }
+
     }
 }
