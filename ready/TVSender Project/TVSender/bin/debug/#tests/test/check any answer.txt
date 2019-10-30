@@ -1,4 +1,0 @@
-[test.answer]
-code = ee05f070009b
-regex=.+
-display=Проверка ответа от ТВ

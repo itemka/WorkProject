@@ -1,5 +1,0 @@
-12:18:27:179 |Info|thread 9|#148| Form1.NewPortsInitialize->Code.Port1Initialize |  Port1Initialize()
-12:18:27:399 |Debug|thread 9|#156| Form1.NewPortsInitialize->Code.Port1Initialize |  new SerialPort() COM7
-12:18:34:385 |Info|thread 11|#234| ThreadHelper.ThreadStart_Context->Code.BackgroundPortCheckerMethod |  start
-12:19:51:194 |Debug|thread 9|#592| Form1.Form1_FormClosing->Form1.ClosePorts |  try Close(): port & genr
-12:19:51:211 |Debug|thread 9|#597| Form1.Form1_FormClosing->Form1.ClosePorts |  Closed() port & genr success

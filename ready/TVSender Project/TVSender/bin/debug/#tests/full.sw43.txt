@@ -1,4 +1,0 @@
-[full.sw43]
-code = ee05f070009b
-read = Aug 18 2016
-display = sw

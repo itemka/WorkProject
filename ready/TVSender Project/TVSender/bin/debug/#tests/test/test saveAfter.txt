@@ -1,4 +1,0 @@
-[test.saveafter]
-code = ee05e20101cc
-//readafter = 545620532F4E3A, 14
-readafter = ;k1-, 2

@@ -1,9 +1,0 @@
-[dvbt Horizont]
-code = ee05f06000b3
-form
-
-display = dvbt Horizont
-msg = Изображение и звук DVB-T соответствуют?
-image = toshiba/autoshow.jpg
-label = форма1
-

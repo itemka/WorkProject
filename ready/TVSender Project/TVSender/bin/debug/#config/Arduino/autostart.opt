@@ -1,5 +1,0 @@
-
-[Auto]
-text = <get.arduino>
-stop=100
-read = {k2=pressed}

@@ -1,9 +1,0 @@
-[atv horizont]
-code = ee05f06000a1
-form
-
-display = atv horizont
-msg = Изображение и звук ATV соответствуют?
-image = toshiba/autoshow.jpg
-label = форма1
-

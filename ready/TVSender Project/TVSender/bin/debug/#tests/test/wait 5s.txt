@@ -1,3 +1,0 @@
-[wait3s]
-display = ждем 3с
-stop=3000

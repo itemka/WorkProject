@@ -1,3 +1,0 @@
-[CI]
-code = ee05f04200c1
-display = CI not full

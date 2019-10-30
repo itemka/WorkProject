@@ -1,8 +1,0 @@
-[aging.on]
-code = ee05f04200c2
-display = aging mode on
-
-[aging.off]
-code = ee05f04200c3
-pause = 1000
-display = aging mode off

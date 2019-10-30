@@ -1,9 +1,0 @@
-[double]
-code = 020202
-form
-
-display = Тест2
-msg = сообщение 2
-image = mtv.jpg
-label = ожидайте 5
-

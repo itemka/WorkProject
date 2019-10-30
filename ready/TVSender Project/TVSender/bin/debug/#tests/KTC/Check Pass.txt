@@ -1,7 +1,0 @@
-[checkpass]
-checkpass = [list]
-
-
-[list]
-ktc.wb
-ktc.wb.chroma

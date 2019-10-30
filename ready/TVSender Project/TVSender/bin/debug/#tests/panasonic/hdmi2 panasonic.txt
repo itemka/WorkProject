@@ -1,9 +1,0 @@
-[hdmi2 panasonic]
-code = ee05f06100a5
-form
-
-display = hdmi2 panasonic
-msg = Изображение и звук hdmi2  соответствуют?
-image = toshiba/autoshow.jpg
-label = форма1
-

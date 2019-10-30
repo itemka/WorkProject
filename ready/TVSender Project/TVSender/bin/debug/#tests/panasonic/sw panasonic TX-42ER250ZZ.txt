@@ -1,4 +1,0 @@
-[sw panasonic TX-42ER250ZZ]
-code = ee05f070009b
-read = Sep 12 2017, 16:23:52
-display = sw panasonic TX-42ER250ZZ

@@ -1,7 +1,0 @@
-[keyson]
-code = ee05fd0200fa
-display = keys on
-
-[keysoff]
-display = keys off
-code = ee05fd0200fb

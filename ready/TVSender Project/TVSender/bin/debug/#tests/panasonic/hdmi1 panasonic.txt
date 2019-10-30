@@ -1,9 +1,0 @@
-[hdmi1 panasonic]
-code = ee05f06000a4
-form
-
-display = hdmi1 panasonic
-msg = Тестовое поле "Белый квадрат" отображается корректно?
-image = toshiba/white.jpg
-label = форма1
-

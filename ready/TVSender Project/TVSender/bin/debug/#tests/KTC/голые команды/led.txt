@@ -1,7 +1,0 @@
-[ledon]
-code = ee05f04200c4
-display = LED on
-
-[ledoff]
-display = LED off
-code = ee05f04200c5

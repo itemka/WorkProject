@@ -1,3 +1,0 @@
-[sw]
-code = ee05f070009b
-display = sw not full

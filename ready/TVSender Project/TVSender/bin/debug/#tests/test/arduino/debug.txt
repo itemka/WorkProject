@@ -1,8 +1,0 @@
-[ard.debug]
-text = <debug.arduino>
-stop=100
-readex=.+
-stop=600
-readex=.+
-stop=600
-readex=.+

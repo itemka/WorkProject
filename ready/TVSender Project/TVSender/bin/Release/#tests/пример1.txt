@@ -1,9 +1,0 @@
-[test1]
-code = 01 01 01 01
-form
-
-display = тест1
-msg = сообщение 1
-image = toshiba/autoshow.jpg
-label = форма1
-

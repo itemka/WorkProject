@@ -1,3 +1,0 @@
-[reset]
-code = ee051f0000dc
-display = reset

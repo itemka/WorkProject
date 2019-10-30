@@ -1,3 +1,0 @@
-[test genr]
-genr = 229_3502
-display = test generator

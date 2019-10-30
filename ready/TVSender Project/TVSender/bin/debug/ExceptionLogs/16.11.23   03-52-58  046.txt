@@ -1,6 +1,0 @@
-Ошибка. Не удалось открыть файл.
-
-System.InvalidOperationException: Невозможно запустить процесс, так как не указано имя файла.
-   в System.Diagnostics.Process.Start()
-   в System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
-   в TVSender.OptionsForm1.btnCreateWBFile_Click(Object sender, EventArgs e) в I:\TVsender Project 06.11.2016\TVSender\OptionForm.cs:строка 396

@@ -1,4 +1,0 @@
-[full.sw32LE5181]
-code = ee05f070009b
-read = Jul  6 2017, 14:26:47
-display = sw horizont 32

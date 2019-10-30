@@ -1,4 +1,0 @@
-[full.sw49]
-code = ee05f070009b
-read = Jan 14 2016
-display = sw

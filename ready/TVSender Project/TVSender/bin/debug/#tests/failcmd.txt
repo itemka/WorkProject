@@ -1,4 +1,0 @@
-[failcmd]
-code = ee05f06000a4
-hren
-display = Провал команды

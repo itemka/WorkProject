@@ -1,4 +1,0 @@
-[sw panasonic TX-43DR300ZZ]
-code = ee05f070009b
-read = Oct 10 2016, 20:25:58
-display = sw panasonic TX-43DR300ZZ

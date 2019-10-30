@@ -33,6 +33,8 @@ namespace RedRat3
     {
         public static string RedRat3_Data = "C:\\RedRat3_Data\\";
         public static string modelsPath = "C:\\RedRat3_Data\\Models";
+
+
         public ListViewItem FocusedItem { get; }
 
         public IRedRat3 RedRat3;
@@ -41,6 +43,12 @@ namespace RedRat3
         public static string pathClick = modelsPath;
         public string tempPathForCopyPast;
         public bool copy = false;
+
+        // To unzup AVDeviceDB
+        string signals;
+        protected AVDeviceDB avDeviceDB;
+        protected AVDevice avDevice;
+        string avDeviceDBName = "";
 
 
         public Form1()
@@ -72,36 +80,21 @@ namespace RedRat3
 
         public void Messages(string message = "") { textBox2.Text = "- " + message + Environment.NewLine + Environment.NewLine + textBox2.Text; }
 
-        #region ListView
-        // Send path and it returned name Directory where be this exe-file   
-        string ReverseStringAndDelete(string s)
+
+
+        #region Monipulation with string
+        // Delete Point From String
+        private string DeletePointFromString(string str)
         {
-            string str = "";
-
-            //Переворачивает строку задом на перед
-            char[] arr = s.ToCharArray();
-            Array.Reverse(arr);
-
-            var b = false;
-            for (int i = 0; i < arr.Length; i++)
+            string newStr = "";
+            char[] arrayChar = str.ToCharArray();
+            for (int i = 0; i < arrayChar.Length; i++)
             {
-                if (b == false)
-                {
-                    if (arr[i] == '\\')
-                    {
-                        b = true;
-                    }
-                    else
-                    {
-                        str += arr[i];
-                    }
-
-                }
+                if (arrayChar[i] == '.') newStr += "";
+                else newStr += arrayChar[i];
             }
-            char[] rra = str.ToCharArray();
-            Array.Reverse(rra);
-
-            return new string(rra);
+            char[] newString = newStr.ToCharArray();
+            return new string(newString);
         }
         // Делаю путь на один переход назад
         string ShortPath(string s)
@@ -136,6 +129,42 @@ namespace RedRat3
 
             return new string(rra);
         }
+        // Send path and it returned name Directory where be this exe-file   
+        string ReverseStringAndDelete(string s)
+        {
+            string str = "";
+
+            //Переворачивает строку задом на перед
+            char[] arr = s.ToCharArray();
+            Array.Reverse(arr);
+
+            var b = false;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (b == false)
+                {
+                    if (arr[i] == '\\')
+                    {
+                        b = true;
+                    }
+                    else
+                    {
+                        str += arr[i];
+                    }
+
+                }
+            }
+            char[] rra = str.ToCharArray();
+            Array.Reverse(rra);
+
+            return new string(rra);
+        }
+        #endregion
+
+
+
+
+        #region ListView
         // Добавляем папки с файлами в ListView
         public void AddFoldersWithFileFromEnterPath(string path, bool back = false)
         {
@@ -373,6 +402,7 @@ namespace RedRat3
 
 
 
+
         #region Events
         // Событие для горячих клавиш
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -400,6 +430,11 @@ namespace RedRat3
             if (!Char.IsDigit(e.KeyChar) && e.KeyChar != Convert.ToChar(8)) { e.Handled = true; }
         }
         #endregion
+
+
+
+
+
         #region Buttons
         // Кнопка поиска RedRat3(F1)
         private void button14_Click(object sender, EventArgs e)
@@ -626,28 +661,12 @@ namespace RedRat3
 
 
 
-        private string pointDelete(string str)
-        {
-            string newStr = "";
-            char[] arrayChar = str.ToCharArray();
-            for (int i = 0; i < arrayChar.Length; i++)
-            {
-                if (arrayChar[i] == '.') newStr += "";
-                else newStr += arrayChar[i];
-            }
-            char[] newString = newStr.ToCharArray();
-            return new string(newString);
-        }
 
 
-        string signals;
-        protected AVDeviceDB avDeviceDB;
-        protected AVDevice avDevice;
-        string avDeviceDBName = "";
-
+        #region Read signal database from XML
+        // Read signal database from XML file and return avDeviceDB.
         protected void LoadDB()
         {
-            // Read signal database from XML file.
             var openFileDialog = new OpenFileDialog
             {
                 Filter = "XML files (*.xml)|*.xml|All files (*.*)|*.*",
@@ -675,7 +694,6 @@ namespace RedRat3
                 if (fs != null) fs.Close();
             }
         }
-
         // Кнопка вызова пульта
         private void button12_Click(object sender, EventArgs e)
         {
@@ -683,14 +701,15 @@ namespace RedRat3
             //RC.ShowDialog();
 
             LoadDB();
+            // Get AVDevices from avDeviceDB
             AVDevice[] AVDevices = avDeviceDB.AVDevices;
-            //Беру последнее имя и удаляю точку в имени
-            string nameFolderAVDeviceDB = ReverseStringAndDelete(pointDelete(avDeviceDBName));
+            //Get full name and remove point from name
+            string nameFolderAVDeviceDB = ReverseStringAndDelete(DeletePointFromString(avDeviceDBName));
             if (!Directory.Exists(pathClick + "\\" + nameFolderAVDeviceDB))
-            {
-                Directory.CreateDirectory(pathClick + "\\" + nameFolderAVDeviceDB); //MessageBox.Show(pathClick + "\\" + nameFolderAVDeviceDB);
-            }
+                Directory.CreateDirectory(pathClick + "\\" + nameFolderAVDeviceDB);
+            Messages("Создана папка " + nameFolderAVDeviceDB);
 
+            // It is displaying created folders
             AddFoldersWithFileFromEnterPath(pathClick);
 
             foreach (AVDevice item in AVDevices)
@@ -714,6 +733,7 @@ namespace RedRat3
             }
             MessageBox.Show(signals);
         }
+        #endregion
 
     }
 }

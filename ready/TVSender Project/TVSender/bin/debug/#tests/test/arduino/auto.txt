@@ -1,9 +1,0 @@
-[ard.Auto]
-text = <get.arduino>
-stop=100
-read = {exe=1}
-//read = {k2=pressed}
-
-
-[ard.x]
-text = x

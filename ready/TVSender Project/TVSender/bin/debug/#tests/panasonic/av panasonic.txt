@@ -1,9 +1,0 @@
-[av panasonic]
-code = ee05f06100a8
-form
-
-display = av panasonic
-//msg = Изображение и звук AV  соответствуют?
-//image = toshiba/autoshow.jpg
-label = форма1
-

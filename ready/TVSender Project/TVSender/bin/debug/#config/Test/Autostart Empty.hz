@@ -1,7 +1,0 @@
-[kts]
-test.auto.send
-wait3s
-test.vga.auto
-//test.answer
-//test.hdmi1.auto
-

@@ -1,5 +1,0 @@
-D:\Projects\TVSender Project\SavingManager\bin\Debug\SavingManager.dll
-D:\Projects\TVSender Project\SavingManager\bin\Debug\SavingManager.pdb
-D:\Projects\TVSender Project\SavingManager\obj\Debug\SavingManager.csprojResolveAssemblyReference.cache
-D:\Projects\TVSender Project\SavingManager\obj\Debug\SavingManager.dll
-D:\Projects\TVSender Project\SavingManager\obj\Debug\SavingManager.pdb
